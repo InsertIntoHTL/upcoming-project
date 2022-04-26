@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  background: rgb(77,59,53);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  perspective: 10px;
+}
+
+body > div {
+  height: 55vw;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.layer {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+}
+
+#first_layer {
+  background-image: url("parallax/desktop/BG.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateZ(-10px) scale(4) translateY(-7vw);
+  z-index: 0;
+}
+
+#second_layer {
+  background-image: url("parallax/desktop/Clouds.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateZ(-8px) scale(1.4) translateY(-8vw);
+  z-index: 1;
+}
+#third_layer {
+  background-image: url("parallax/desktop/Background_Hill.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateZ(-4px) scale(1.4) translateY(10vw);
+  z-index: 2;
+}
+#fourth_layer {
+  background-image: url("parallax/desktop/Rocks.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateZ(-3px) scale(1.2) translateY(7vw);
+  z-index: 3;
+}
+#fifth_layer {
+  background-image: url("parallax/desktop/Dump.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateZ(-2px) scale(0.6) translateX(50vw) translateY(10vw);
+  z-index: 4;
+}
+
+#sixth_layer {
+  background-image: url("parallax/desktop/Front Dump.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateZ(-2px) scale(0.7) translateX(-36vw) translateY(22vw);
+  z-index: 5;
+}
+
+#seventh_layer {
+  background-image: url("parallax/desktop/Garbage.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateZ(-1px) scale(0.8) translateY(50vw);
+  z-index: 6;
+}
+
+
+
+section {
+  position: relative;
+  z-index: 0;
+  height: 1500px;
+  width: 100%;
+  background-color: gray;
+}
