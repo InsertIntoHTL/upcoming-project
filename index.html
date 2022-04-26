@@ -1,38 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CodePen - Firewatch Parallax in CSS</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
-            type="text/javascript"></script>
+    <meta charset="UTF-8"><!-- Primary Meta Tags -->
+    <title>Project Eli</title>
+    <meta name="title" content="Project Eli">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.svg">
+    <meta name="description"
+          content="Project Eli is a hero-driven interactive experience NFT project on the Ethereum blockchain. The collection consists of unique digital collectible NFTs that give you access to collaborate and interact with the story itself and shape the narrative in immersive, interactive experiences and decision-making mechanisms.">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://project-eli.com/">
+    <meta property="og:title" content="Project Eli">
+    <meta property="og:description"
+          content="Project Eli is a hero-driven interactive experience NFT project on the Ethereum blockchain. The collection consists of unique digital collectible NFTs that give you access to collaborate and interact with the story itself and shape the narrative in immersive, interactive experiences and decision-making mechanisms.">
+    <meta property="og:image"
+          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://project-eli.com/">
+    <meta property="twitter:title" content="Project Eli">
+    <meta property="twitter:description"
+          content="Project Eli is a hero-driven interactive experience NFT project on the Ethereum blockchain. The collection consists of unique digital collectible NFTs that give you access to collaborate and interact with the story itself and shape the narrative in immersive, interactive experiences and decision-making mechanisms.">
+    <meta property="twitter:image"
+          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="./styles/styles.css" type="text/css">
+    <!--link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.hover3d.min.js"></script>
 
 </head>
 <body>
 
-<div>
-    <div id="first_layer" class="layer">
+<header>
+    <div class="mobile hidden" id="menu">
+        <div>
+            <div class="menu-wrapper">
+                <a href="#home" onclick="toggleMenu()">Home</a>
+                <a href="#story" onclick="toggleMenu()">Story</a>
+                <a href="#lore" onclick="toggleMenu()">What is Eli</a>
+                <a href="#ten-majors" onclick="toggleMenu()">Majors</a>
+                <a href="#team" onclick="toggleMenu()">Team</a>
+                <a href="#roadmap" onclick="toggleMenu()">Roadmap</a>
+            </div>
+        </div>
+        <div class="connect-wrapper">
+            <a href="https://discord.gg/KhfEuDZg" target="_blank">
+                Join the Discord
+            </a>
+        </div>
     </div>
-    <div id="second_layer" class="layer">
-    </div>
-    <div id="third_layer" class="layer">
-    </div>
-    <div id="fourth_layer" class="layer">
-    </div>
-    <div id="fifth_layer" class="layer">
-    </div>
-    <div id="sixth_layer" class="layer">
-    </div>
-    <div id="seventh_layer" class="layer">
-    </div>
-</div>
-<section>
+    <nav class="nav-blurry">
+        <div>
+            <div class="image-wrapper">
+                <a href="">
+                    <img src="assets/icons/header_logo.svg">
+                </a>
+            </div>
+            <div class="menu-wrapper">
+                <a href="#home">Home</a>
+                <a href="#story">Story</a>
+                <a href="#lore">What is Eli</a>
+                <a href="#ten-majors">Majors</a>
+                <a href="#team">Team</a>
+                <a href="#roadmap">Roadmap</a>
+            </div>
+            <div class="connect-wrapper">
+                <a href="https://discord.gg/KhfEuDZg" target="_blank">
+                    Join the Discord
+                </a>
+            </div>
+            <div class="burger" id="burger">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+            </div>
+        </div>
+    </nav>
+</header>
 
+<div class="parallax">
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+</div>
+
+
+<section id="story-section">
+    <div class="desktop-story">
+        <div class="tv-wrapper">
+            <img src="assets/sections/story/tv.svg">
+            <div class="video-carousel">
+                <div class="controls" id="previous">
+                    <img src="assets/sections/story/arrow_left.svg">
+                </div>
+                <div class="carousel">
+                    <iframe id="first-vid" class="iframe"
+                            src="https://www.youtube.com/embed/65bWIAC2TCw?modestbranding=1&amp;rel=0&amp;controls=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+
+                    <iframe id="second-vid"
+                            src="https://www.youtube.com/embed/TmhibQ28GKE?modestbranding=1&amp;rel=0&amp;controls=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="" class="hidden iframe"></iframe>
+
+
+                    <iframe id="third-vid"
+                            src="https://www.youtube.com/embed/V1bFr2SWP1I?modestbranding=1&amp;rel=0&amp;controls=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="" class="hidden iframe"></iframe>
+                </div>
+                <div class="controls" id="next">
+                    <img src="assets/sections/story/arrow_right.svg">
+                </div>
+            </div>
+        </div>
+        <div class="first_transition">
+            <img src="assets/sections/story/first_transition.png">
+        </div>
+
+        <div class="filler"></div>
+
+        <div class="second_transition">
+            <img src="assets/sections/story/second_transition.svg">
+        </div>
+    </div>
+    <div class="mobile-story hidden">
+        <img src="assets/sections/story/video_border.svg">
+
+        <iframe class="iframe"
+                src="https://www.youtube.com/embed/4gh8JQyFELY?modestbranding=1&amp;rel=0&amp;controls=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""></iframe>
+    </div>
 </section>
 
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<section id="lore">
+
+    <lottie-player
+            src="https://assets7.lottiefiles.com/packages/lf20_ygmlisg6.json"
+            background="transparent" speed="0.75" class="lab-light" id="lab_light" loop>
+
+    </lottie-player>
+    <div>
+        <div class="title">
+            <img src="assets/sections/lore/what_is_eli.svg">
+        </div>
+        <p><b>Project Eli</b> is a hero-driven interactive experience. It enables story lovers to interact with the
+            story
+            and shape its narrative. It's a journey around self-discovery, finding a purpose, facing your fear, and
+            enjoying the trip along the way with friends and company.
+            <br><br>
+            Holding a character will give you access to special channels as a storyteller and participate in
+            critical decisions and directions in our journey through a unique process. Whether through
+            decision-making, mini-games, or other interactive experiences, our actions and interactions will decide
+            how the story plays out. Then watch as this story we are building turns into an immersive and
+            interactive journey that we all will experience.
+        </p>
+        <h3 class="calltoaction">Are you ready to build this story together?</h3>
+        <img src="assets/sections/lore/Lab_Fan.svg">
+    </div>
+</section>
+
+<div id="graphics_2">
+    <div class="graphics">
+        <img src="assets/sections/transitions/graphics_2.svg">
+    </div>
+</div>
+
+<section id="ten-majors">
+    <div class="rock-container">
+        <img src="assets/sections/majors/Majors_Rock.svg">
+        <div>
+            <div class="desktop-upper">
+                <div class="current-major">
+                    <img src="assets/sections/majors/paper.svg">
+                    <div id="majors">
+                        <img src="assets/sections/majors/characters/revealed/majors%20for%20website-11.svg"
+                             id="first-major">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-17.svg"
+                             id="second-major" class="hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-21.svg"
+                             id="third-major" class="hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-14.svg"
+                             id="fourth-major" class="hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-16.svg"
+                             id="fifth-major" class="hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-19.svg"
+                             id="sixth-major" class="hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-13.svg"
+                             id="seventh-major" class="hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-20.svg"
+                             id="eigth-major" class="hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-15.svg"
+                             id="nineth-major" class="hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-18.svg"
+                             id="tenth-major" class="hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-12.svg"
+                             id="eleventh-major" class="hidden">
+                    </div>
+                </div>
+                <div class="major-detail">
+                    <div class="major-title">
+                        <div>
+                            <p id="major-title" class="eli_font">ELI</p>
+                        </div>
+                        <img src="assets/sections/majors/majors_nameplate.svg">
+                    </div>
+                    <p id="major-description">Eli was created by a mad scientist who was obsessed about control and
+                        domination. He was meant to be a killer robot that could aid him to eradicate life at his
+                        desire.
+                        But for some reason, and only having limited resources to build this robot, ELI was born
+                        with a cute exterior. No one would ever believe that he was made to kill. He looks like he
+                        cannot hurt a fly.
+
+                    </p>
+                </div>
+            </div>
+            <div class="desktop-lower">
+                <div class="carousel-bg">
+                    <img src="assets/sections/majors/paper_behind_eli.svg">
+                </div>
+                <div class="controller">
+                    <div class="control-left" id="changeEliBefore">
+                        <img src="assets/sections/majors/arrow_left.svg">
+                    </div>
+                    <div class="control-right" id="changeEliAfter">
+                        <img src="assets/sections/majors/arrow_right.svg">
+                    </div>
+                </div>
+                <div class="major-carousel" id="majors-small">
+                    <div class="major-container hidden">
+                        <img src="assets/sections/majors/characters/revealed/majors%20for%20website-11.svg">
+                    </div>
+                    <div class="major-container hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-17.svg">
+                    </div>
+                    <div class="major-container hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-21.svg">
+                    </div>
+                    <div class="major-container hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-14.svg">
+                    </div>
+                    <div class="major-container hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-16.svg">
+                    </div>
+                    <div class="major-container hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-19.svg">
+                    </div>
+                    <div class="major-container hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-13.svg">
+                    </div>
+                    <div class="major-container hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-20.svg">
+                    </div>
+                    <div class="major-container hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-15.svg">
+                    </div>
+                    <div class="major-container hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-18.svg">
+                    </div>
+                    <div class="major-container hidden">
+                        <img src="assets/sections/majors/characters/silhouettes/majors%20for%20website-12.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="team">
+    <div>
+        <div class="image-wrapper">
+            <img class="eli_font" src="assets/sections/team/our_team.svg">
+        </div>
+        <div class="team-wrapper">
+            <div class="team-member project" data-aos="zoom-in-up">
+                <div class="project__card">
+                    <img src="assets/sections/team/profile_pic.svg">
+                    <div class="team-info">
+                        <h1>Mad.Nad</h1>
+                        <h2>Concept Artist</h2>
+                        <div class="team-socials">
+                            <img src="assets/sections/team/twitter.svg">
+                            <a href="https://twitter.com" target="_blank">@MADNAD</a>
+                        </div>
+                        <hr>
+                        <p>Introvert artist by day, asylum runaway by night, and a mother in-between.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member project" data-aos="zoom-in-up">
+                <div class="project__card">
+                    <img src="assets/sections/team/profile_pic.svg">
+                    <div class="team-info">
+                        <h1>N.O.N.G.</h1>
+                        <h2>Animation Director</h2>
+                        <div class="team-socials">
+                            <img src="assets/sections/team/twitter.svg">
+                            <a href="https://twitter.com" target="_blank">@MADNAD</a>
+                        </div>
+                        <hr>
+                        <p>Formerly led projects for Microsoft, Swatch, and others. Trying to escape boredom through
+                            NFTs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member project" data-aos="zoom-in-up">
+                <div class="project__card">
+                    <img src="assets/sections/team/profile_pic.svg">
+                    <div class="team-info">
+                        <h1>LPR</h1>
+                        <h2>Marketing Director</h2>
+                        <div class="team-socials">
+                            <img src="assets/sections/team/twitter.svg">
+                            <a href="https://twitter.com" target="_blank">@MADNAD</a>
+                        </div>
+                        <hr>
+                        <p>Ex-Netflix marketing head, sucked down the NFT rabbit hole.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member project" data-aos="zoom-in-up">
+                <div class="project__card">
+                    <img src="assets/sections/team/profile_pic.svg">
+                    <div class="team-info">
+                        <h1>Brobot</h1>
+                        <h2>Web Developer</h2>
+                        <div class="team-socials">
+                            <img src="assets/sections/team/twitter.svg">
+                            <a href="https://twitter.com" target="_blank">@MADNAD</a>
+                        </div>
+                        <hr>
+                        <p>A try-hard, failing every step of the way.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member project" data-aos="zoom-in-up">
+                <div class="project__card">
+                    <img src="assets/sections/team/profile_pic.svg">
+                    <div class="team-info">
+                        <h1>BadWrite</h1>
+                        <h2>Copywriter</h2>
+                        <div class="team-socials">
+                            <img src="assets/sections/team/twitter.svg">
+                            <a href="https://twitter.com" target="_blank">@MADNAD</a>
+                        </div>
+                        <hr>
+                        <p>God of copywriting, or that's what he thinks. Tolerated for no apparent reason. We're
+                            just
+                            stuck with him.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member project" data-aos="zoom-in-up">
+                <div class="project__card">
+                    <img src="assets/sections/team/profile_pic.svg">
+                    <div class="team-info">
+                        <h1>Arz</h1>
+                        <h2>Art Director</h2>
+                        <div class="team-socials">
+                            <img src="assets/sections/team/twitter.svg">
+                            <a href="https://twitter.com" target="_blank">@MADNAD</a>
+                        </div>
+                        <hr>
+                        <p>We're pampering this guy; he's our branding guru. No mockery here. Please leave.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member project" data-aos="zoom-in-up">
+                <div class="project__card">
+                    <img src="assets/sections/team/profile_pic.svg">
+                    <div class="team-info">
+                        <h1>Ben</h1>
+                        <h2>Marketing</h2>
+                        <div class="team-socials">
+                            <img src="assets/sections/team/twitter.svg">
+                            <a href="https://twitter.com" target="_blank">@MADNAD</a>
+                        </div>
+                        <hr>
+                        <p>Our hustler, watch out; he's a sticky one.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member project" data-aos="zoom-in-up">
+                <div class="project__card">
+                    <img src="assets/sections/team/profile_pic.svg">
+                    <div class="team-info">
+                        <h1>Spector</h1>
+                        <h2>Project Manager</h2>
+                        <div class="team-socials">
+                            <img src="assets/sections/team/twitter.svg">
+                            <a href="https://twitter.com" target="_blank">@MADNAD</a>
+                        </div>
+                        <hr>
+                        <p>Lame lame lame, an alarm clock for running around the team making sure we hit deadlines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member project" data-aos="zoom-in-up">
+                <div class="project__card">
+                    <img src="assets/sections/team/profile_pic.svg">
+                    <div class="team-info">
+                        <h1>Rogue</h1>
+                        <h2>3D Generalist</h2>
+                        <div class="team-socials">
+                            <img src="assets/sections/team/twitter.svg">
+                            <a href="https://twitter.com" target="_blank">@MADNAD</a>
+                        </div>
+                        <hr>
+                        <p>Prince charming here is creating some cool 3D art that we'll never use.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member project" data-aos="zoom-in-up">
+                <div class="project__card">
+                    <img src="assets/sections/team/profile_pic.svg">
+                    <div class="team-info">
+                        <h1>Asteria Labs</h1>
+                        <h2>Development</h2>
+                        <div class="team-socials">
+                            <img src="assets/sections/team/twitter.svg">
+                            <a href="https://twitter.com" target="_blank">@MADNAD</a>
+                        </div>
+                        <hr>
+                        <p>No clue what to write, we'll have to ask them.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="graphics_3">
+    <div class="graphics">
+        <img src="assets/sections/team/our_team_separator.svg">
+    </div>
+</div>
+
+<section id="roadmap">
+    <div data-aos="zoom-in">
+        <div class="image-wrapper">
+            <img src="assets/sections/roadmap/roadmap_title.svg">
+        </div>
+        <div class="roadmap-wrapper">
+            <div class="paper-wrapper">
+                <img id="paper_top" src="assets/sections/roadmap/paper_top.svg">
+                <div class="content-wrapper">
+                    <div>
+                        <div id="chapter0">
+                            <img class="chapter" src="assets/sections/roadmap/chapter_0.svg" style="width: 28%">
+                            <p>With each milestone when minting. Eli will be randomly aidropping the
+                                majors to his army, blessing his 10 exceptional leaders.</p>
+                            <img id="firstside" class="sideimage" data-aos="zoom-in-left" data-aos-offset="450"
+                                 src="assets/sections/roadmap/Eli%20Traits.svg">
+                        </div>
+                        <img src="assets/sections/roadmap/Separator.svg">
+                        <div id="chapter1">
+                            <img class="chapter" src="assets/sections/roadmap/chapter_1.svg">
+                            <p>Eli's journey will be iconic, and we will follow it up closely with a comic where the
+                                army will play a role in how it plays out.</p>
+                            <img id="secondside" class="sideimage" data-aos="zoom-in-right" data-aos-offset="450"
+                                 src="assets/sections/roadmap/Comic.svg">
+                        </div>
+                        <img src="assets/sections/roadmap/Separator.svg">
+                        <div id="chapter2">
+                            <img class="chapter" src="assets/sections/roadmap/chapter_2.svg" style="width: 24%">
+                            <p>Eli will be expanding the eco-system and brand through an online merch store.
+                                Everyone
+                                will hear about Eli and the army will only keep growing.</p>
+                            <img id="thirdside" class="sideimage" data-aos="zoom-in-left" data-aos-offset="450"
+                                 src="assets/sections/roadmap/Store.svg">
+                        </div>
+                        <img src="assets/sections/roadmap/Separator.svg">
+                        <div id="chapter3">
+                            <img class="chapter" src="assets/sections/roadmap/chapter_3.png" style="width: 28%">
+                            <p>What if Elis went three dimensional? A free 3D NFT version of each Eli will be
+                                dropped to
+                                the army clonse, doubling our numbers and adding a new collection.</p>
+                            <img id="fourthside" class="sideimage" data-aos="zoom-in-right" data-aos-offset="450"
+                                 src="assets/sections/roadmap/3d_eli.svg">
+                        </div>
+                        <img src="assets/sections/roadmap/Separator.svg">
+                        <div id="chapter4">
+                            <img class="chapter" src="assets/sections/roadmap/chapter_4.svg">
+                            <p>Eli finally finds the lab he was created in, and things start going in a new
+                                dimension</p>
+                            <img id="fifthside" class="sideimage" data-aos="zoom-in-left" data-aos-offset="450"
+                                 src="assets/sections/roadmap/machine.svg">
+                        </div>
+                        <img src="assets/sections/roadmap/Separator.svg">
+                        <div id="chapter5">
+                            <img class="chapter" src="assets/sections/roadmap/chapter_5.svg" style="width: 28%">
+                            <p>Elis need a space to train, compete, and go to war! Eli has a big ambition and as a
+                                strategist, he'll be creating the next big dump.</p>
+                            <img id="sixthside" class="sideimage" data-aos="zoom-in-right" data-aos-offset="450"
+                                 src="assets/sections/roadmap/Dump.svg">
+
+                        </div>
+
+                        <div class="bg"></div>
+                    </div>
+                </div>
+                <img id="paper_bottom" src="assets/sections/roadmap/paper_bottom.svg">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div>
+        <div class="image-container">
+            <img src="assets/icons/header_logo.svg">
+        </div>
+
+        <div class="link-container">
+
+            <div>
+                <p>Stay in touch</p>
+                <a href="https://discord.gg/KhfEuDZg" target="_blank">Discord</a>
+                <a href="https://twitter.com/elonmusk" target="_blank">Twitter</a>
+            </div>
+
+            <div>
+                <p>Contact</p>
+                <a href="mailto:eli@project-eli.com">Send message</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="./js/scripts.js" type="module"></script>
+<!--script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script-->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<!--script>
+    AOS.init();
+</script-->
 </body>
 </html>
