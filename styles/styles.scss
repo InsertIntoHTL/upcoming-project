@@ -276,7 +276,7 @@ body {
       z-index: 0;
     }
 
-    :nth-child(2) {
+    > :nth-child(2) {
       background-image: url("../assets/sections/home/parallax/new/2.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -284,7 +284,7 @@ body {
       z-index: 1;
     }
 
-    :nth-child(3) {
+    > :nth-child(3) {
       background-image: url("../assets/sections/home/parallax/new/3.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -292,7 +292,7 @@ body {
       z-index: 2;
     }
 
-    :nth-child(4) {
+    > :nth-child(4) {
       background-image: url("../assets/sections/home/parallax/new/4.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -300,7 +300,7 @@ body {
       z-index: 3;
     }
 
-    :nth-child(5) {
+    > :nth-child(5) {
       background-image: url("../assets/sections/home/parallax/new/5.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -308,7 +308,7 @@ body {
       z-index: 4;
     }
 
-    :nth-child(6) {
+    > :nth-child(6) {
       background-image: url("../assets/sections/home/parallax/new/6.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -316,37 +316,36 @@ body {
       z-index: 5;
     }
 
-    :nth-child(7) {
-      background-image: url("../assets/sections/home/parallax/headline.svg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      transform: translateZ(0) scale(0.35) translateY(130vw);
-      z-index: 6;
-    }
-
-    :nth-child(8) {
-      transform: translateZ(0) scale(0.1) translateY(380vw) translateX(-55vw);
-      display: block;
+    > :nth-child(7) {
+      transform: translateZ(0) scale(1) translateY(80vw);
+      margin: auto;
+      width: 35%;
       z-index: 6;
 
-      img:hover {
-        cursor: pointer;
-        filter: brightness(70%);
-        transition: 0.25s ease;
+      p {
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        padding-bottom: 20px;
+      }
+
+      > div {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+
+        img {
+          width: 42%;
+        }
+
+        img:hover {
+          cursor: pointer;
+          filter: brightness(70%);
+          transition: 0.25s ease;
+        }
       }
     }
-
-    :nth-child(9) {
-      transform: translateZ(0) scale(0.1) translateY(380vw) translateX(55vw);
-      z-index: 6;
-
-      img:hover {
-        cursor: pointer;
-        filter: brightness(70%);
-        transition: 0.25s ease;
-      }
-    }
-
   }
 
   #story-section {

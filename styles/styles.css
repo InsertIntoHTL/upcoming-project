@@ -237,63 +237,63 @@ body .parallax > :nth-child(1) {
   transform: translateZ(-20px) scale(2.9) translateY(0vw);
   z-index: 0;
 }
-body .parallax :nth-child(2) {
+body .parallax > :nth-child(2) {
   background-image: url("../assets/sections/home/parallax/new/2.png");
   background-size: contain;
   background-repeat: no-repeat;
   transform: translateZ(-16px) scale(1.4) translateY(18vw);
   z-index: 1;
 }
-body .parallax :nth-child(3) {
+body .parallax > :nth-child(3) {
   background-image: url("../assets/sections/home/parallax/new/3.png");
   background-size: contain;
   background-repeat: no-repeat;
   transform: translateZ(-12px) scale(1.7) translateY(66vw);
   z-index: 2;
 }
-body .parallax :nth-child(4) {
+body .parallax > :nth-child(4) {
   background-image: url("../assets/sections/home/parallax/new/4.png");
   background-size: contain;
   background-repeat: no-repeat;
   transform: translateZ(-8px) scale(1.2) translateY(70vw) translateX(0);
   z-index: 3;
 }
-body .parallax :nth-child(5) {
+body .parallax > :nth-child(5) {
   background-image: url("../assets/sections/home/parallax/new/5.png");
   background-size: contain;
   background-repeat: no-repeat;
   transform: translateZ(-4px) scale(1.3) translateY(75vw);
   z-index: 4;
 }
-body .parallax :nth-child(6) {
+body .parallax > :nth-child(6) {
   background-image: url("../assets/sections/home/parallax/new/6.png");
   background-size: contain;
   background-repeat: no-repeat;
   transform: translateZ(-2px) scale(0.7) translateY(140vw);
   z-index: 5;
 }
-body .parallax :nth-child(7) {
-  background-image: url("../assets/sections/home/parallax/headline.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: translateZ(0) scale(0.35) translateY(130vw);
+body .parallax > :nth-child(7) {
+  transform: translateZ(0) scale(1) translateY(80vw);
+  margin: auto;
+  width: 35%;
   z-index: 6;
 }
-body .parallax :nth-child(8) {
-  transform: translateZ(0) scale(0.1) translateY(380vw) translateX(-55vw);
-  display: block;
-  z-index: 6;
+body .parallax > :nth-child(7) p {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding-bottom: 20px;
 }
-body .parallax :nth-child(8) img:hover {
-  cursor: pointer;
-  filter: brightness(70%);
-  transition: 0.25s ease;
+body .parallax > :nth-child(7) > div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
 }
-body .parallax :nth-child(9) {
-  transform: translateZ(0) scale(0.1) translateY(380vw) translateX(55vw);
-  z-index: 6;
+body .parallax > :nth-child(7) > div img {
+  width: 42%;
 }
-body .parallax :nth-child(9) img:hover {
+body .parallax > :nth-child(7) > div img:hover {
   cursor: pointer;
   filter: brightness(70%);
   transition: 0.25s ease;
