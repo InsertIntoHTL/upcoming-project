@@ -258,6 +258,10 @@ body {
     transform-style: preserve-3d;
     position: relative;
 
+    @media screen and (max-width: 600px) {
+      height: 220vw;
+    }
+
     .layer {
       position: absolute;
       top: 0rem;
@@ -273,6 +277,10 @@ body {
       background-position: center;
       transform: translateZ(-25px) scale(2.9) translateY(0vw);
       z-index: 0;
+
+      @media screen and (max-width: 600px) {
+        transform: translateZ(-25px) scale(4) translateY(0vw);
+      }
     }
 
     > :nth-child(2) {
@@ -289,6 +297,10 @@ body {
       background-repeat: no-repeat;
       transform: translateZ(-14px) scale(1.7) translateY(66vw);
       z-index: 2;
+
+      @media screen and (max-width: 600px) {
+        transform: translateZ(-14px) scale(1.7) translateY(130vw);
+      }
     }
 
     > :nth-child(4) {
@@ -297,6 +309,10 @@ body {
       background-repeat: no-repeat;
       transform: translateZ(-11px) scale(1.2) translateY(70vw) translateX(0);
       z-index: 3;
+
+      @media screen and (max-width: 600px) {
+        transform: translateZ(-11px) scale(1.2) translateY(150vw) translateX(0);
+      }
     }
 
     > :nth-child(5) {
@@ -305,6 +321,10 @@ body {
       background-repeat: no-repeat;
       transform: translateZ(-6px) scale(1.3) translateY(75vw);
       z-index: 4;
+
+      @media screen and (max-width: 600px) {
+        transform: translateZ(-6px) scale(1.3) translateY(155vw);
+      }
     }
 
     > :nth-child(6) {
@@ -313,6 +333,10 @@ body {
       background-repeat: no-repeat;
       transform: translateZ(-2px) scale(0.7) translateY(140vw);
       z-index: 5;
+
+      @media screen and (max-width: 600px) {
+        transform: translateZ(-2px) scale(0.7) translateY(250vw);
+      }
     }
 
     > :nth-child(7) {
@@ -321,11 +345,21 @@ body {
       width: 35%;
       z-index: 6;
 
+      @media screen and (max-width: 600px) {
+        width: 70%;
+        transform: translateZ(0) scale(1) translateY(130vw);
+      }
+
       p {
         text-align: center;
         color: white;
         font-size: 24px;
         padding-bottom: 20px;
+
+        @media screen and (max-width: 600px) {
+          font-size: 17px;
+        }
+
       }
 
       > div {
@@ -333,6 +367,10 @@ body {
         margin: auto;
         display: flex;
         justify-content: space-evenly;
+
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
 
         img {
           width: 42%;
