@@ -592,12 +592,10 @@ body #ten-majors {
   background-image: url("../assets/sections/majors/BG.svg");
   background-size: cover;
   background-position: top;
-}
-@media screen and (max-width: 992px) {
-  body #ten-majors {
-    background: #99625a;
+  /*@media screen and (max-width: 992px) {
+    background: rgb(153, 98, 90);
     margin-top: 0;
-  }
+  }*/
 }
 body #ten-majors .rock-container {
   position: relative;
@@ -611,31 +609,26 @@ body #ten-majors .rock-container {
     overflow-x: hidden;
   }
 }
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container #machine_desktop {
+    display: none;
+  }
+  body #ten-majors .rock-container #machine_mobile {
+    display: block;
+  }
+}
 body #ten-majors .rock-container > img {
   position: relative;
-  display: block;
   width: 80%;
   margin: auto;
-}
-@media screen and (max-width: 1200px) {
-  body #ten-majors .rock-container > img {
-    width: 95%;
-  }
-}
-@media screen and (max-width: 992px) {
-  body #ten-majors .rock-container > img {
+  /*@media screen and (max-width: 992px) {
     width: 140vw;
     opacity: 0;
-  }
+  }*/
 }
 @media screen and (max-width: 768px) {
   body #ten-majors .rock-container > img {
-    width: 140vw;
-  }
-}
-@media screen and (max-width: 600px) {
-  body #ten-majors .rock-container > img {
-    width: auto;
+    width: 100vw;
     height: 190vw;
   }
 }
@@ -645,18 +638,11 @@ body #ten-majors .rock-container > div {
   left: 52%;
   transform: translateX(-50%);
   width: 55vw;
-}
-@media screen and (max-width: 992px) {
-  body #ten-majors .rock-container > div {
+  /*@media screen and (max-width: 992px) {
     left: 50%;
-  }
+  }*/
 }
 @media screen and (max-width: 768px) {
-  body #ten-majors .rock-container > div {
-    left: 50%;
-  }
-}
-@media screen and (max-width: 600px) {
   body #ten-majors .rock-container > div {
     width: 90vw;
   }
@@ -664,13 +650,11 @@ body #ten-majors .rock-container > div {
 body #ten-majors .rock-container > div .desktop-upper {
   display: flex;
   height: 25vw;
-}
-@media screen and (max-width: 992px) {
-  body #ten-majors .rock-container > div .desktop-upper {
+  /*@media screen and (max-width: 992px) {
     height: 30vw;
-  }
+  }*/
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-upper {
     flex-direction: column;
     max-height: none;
@@ -691,10 +675,10 @@ body #ten-majors .rock-container > div .desktop-upper .current-major img {
   top: 50%;
   transform: translate(0, -50%);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-upper .current-major img {
-    width: 80vw;
-    top: 0;
+    width: 72vw;
+    top: 5vw;
     left: 50%;
     transform: translate(-50%, 0);
   }
@@ -708,12 +692,6 @@ body #ten-majors .rock-container > div .desktop-upper .current-major > div img {
 }
 @media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-upper .current-major > div img {
-    width: 12vw;
-    left: 50%;
-  }
-}
-@media screen and (max-width: 600px) {
-  body #ten-majors .rock-container > div .desktop-upper .current-major > div img {
     width: 60vw;
   }
 }
@@ -722,53 +700,31 @@ body #ten-majors .rock-container > div .desktop-upper .major-detail {
   position: relative;
   padding: 0 50px;
 }
-@media screen and (max-width: 1200px) {
-  body #ten-majors .rock-container > div .desktop-upper .major-detail {
-    padding: 0 30px;
-  }
-}
 body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title {
   position: relative;
 }
 @media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title {
-    top: -20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title {
     top: 0;
   }
 }
 body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title img {
-  width: 20vw;
+  width: 18vw;
 }
 @media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title img {
-    width: 30vw;
-  }
-}
-@media screen and (max-width: 600px) {
-  body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title img {
     position: relative;
-    width: 62vw;
-    left: 50%;
-    transform: translate(-50%, 0);
+    width: 55vw;
   }
 }
 body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title div {
   position: absolute;
   z-index: 3;
-  width: 20vw;
+  width: 18vw;
   top: 50%;
-  transform: translate(0, -35%);
+  transform: translate(0, -65%);
 }
 @media screen and (max-width: 768px) {
-  body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title div {
-    left: 4vw;
-  }
-}
-@media screen and (max-width: 600px) {
   body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title div {
     left: 50%;
     transform: translate(-50%, -35%);
@@ -777,8 +733,8 @@ body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title
 }
 body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title div p {
   text-align: center;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 42px;
+  font-weight: 100;
   padding: 0;
   color: white;
 }
@@ -787,22 +743,27 @@ body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title
     font-size: 26px;
   }
 }
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title div p {
-    font-size: 20px;
+    font-size: 50px;
+    transform: translateX(-13%) translateY(-30%);
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title div p {
-    font-size: 20px;
+    font-size: 40px;
+    transform: translateX(-13%) translateY(-30%);
   }
 }
 body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description {
   position: relative;
-  margin-top: 20px;
+  height: 63%;
+  width: 85%;
+  margin-top: 14px;
+  margin-left: auto;
+  padding-right: 8px;
   color: white;
-  font-size: 18px;
-  height: 50%;
+  font-size: 22px;
   overflow-y: auto;
   display: block;
 }
@@ -818,44 +779,34 @@ body #ten-majors .rock-container > div .desktop-upper .major-detail #major-descr
 body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description::-webkit-scrollbar-thumb:hover {
   background: #8888ff;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 992px) {
   body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description {
     height: 50%;
-    margin-top: -20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description {
-    height: 50%;
-    margin: 15px 0 25px 0;
-    height: 38vw;
+    margin: auto;
+    height: 30vw;
+    font-size: 22px;
   }
 }
 body #ten-majors .rock-container > div .desktop-lower {
   width: 100%;
   position: relative;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-lower {
-    margin-top: calc(10px - 5vw);
-  }
-}
-@media screen and (max-width: 600px) {
-  body #ten-majors .rock-container > div .desktop-lower {
-    width: 80%;
-    left: 10%;
+    width: 70%;
+    left: 15%;
     top: 118vw;
   }
 }
 body #ten-majors .rock-container > div .desktop-lower .carousel-bg {
   opacity: 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-lower .carousel-bg {
     position: relative;
     transform: scale(1, 2);
@@ -872,7 +823,7 @@ body #ten-majors .rock-container > div .desktop-lower .major-carousel {
   left: 5%;
   overflow-x: hidden;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-lower .major-carousel {
     height: 180%;
     top: -52%;
@@ -891,7 +842,7 @@ body #ten-majors .rock-container > div .desktop-lower .major-carousel .major-con
     aspect-ratio: 1;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-lower .major-carousel .major-container {
     width: 100%;
   }
@@ -937,7 +888,7 @@ body #ten-majors .rock-container > div .desktop-lower .controller {
   left: 50%;
   transform: translateX(-50%);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-lower .controller {
     height: 100%;
     width: 100%;
@@ -951,7 +902,7 @@ body #ten-majors .rock-container > div .desktop-lower .controller .control-left 
   height: 60%;
   aspect-ratio: 1;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-lower .controller .control-left {
     height: 100%;
     left: -13%;
@@ -966,7 +917,7 @@ body #ten-majors .rock-container > div .desktop-lower .controller .control-right
   height: 60%;
   aspect-ratio: 1;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-lower .controller .control-right {
     height: 100%;
     right: -13%;
@@ -1003,7 +954,6 @@ body #team {
 }
 @media screen and (max-width: 992px) {
   body #team {
-    margin-top: -7vw;
     padding-top: 50px;
   }
 }
