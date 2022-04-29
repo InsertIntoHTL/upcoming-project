@@ -950,6 +950,7 @@ body #ten-majors .rock-container > div .desktop-lower .controller .control-left 
   transform: translate(0, -50%);
   height: 60%;
   aspect-ratio: 1;
+  -webkit-tap-highlight-color: transparent;
 }
 @media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-lower .controller .control-left {
@@ -965,6 +966,7 @@ body #ten-majors .rock-container > div .desktop-lower .controller .control-right
   transform: translate(0, -50%);
   height: 60%;
   aspect-ratio: 1;
+  -webkit-tap-highlight-color: transparent;
 }
 @media screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-lower .controller .control-right {
