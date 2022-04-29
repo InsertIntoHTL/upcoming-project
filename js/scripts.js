@@ -94,9 +94,9 @@ const next = document.querySelector('#next');
 
 const first_vid = document.querySelector('#first-vid');
 const second_vid = document.querySelector('#second-vid');
-const third_vid = document.querySelector('#third-vid');
+//const third_vid = document.querySelector('#third-vid');
 
-const videos = [first_vid, second_vid, third_vid];
+const videos = [first_vid, second_vid];
 
 let current_vid = 0;
 
@@ -123,7 +123,7 @@ function prevVid() {
     });
     videos[current_vid].classList.add('hidden');
     if (current_vid === 0) {
-        current_vid = 2;
+        current_vid = videos.length-1;
     } else {
         current_vid--;
     }
