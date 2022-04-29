@@ -589,12 +589,9 @@ body #ten-majors {
   position: relative;
   padding-bottom: 2.8vw;
   padding-top: 0;
-  margin-top: -3.9vw;
-  background: #99625a;
-  background: -moz-linear-gradient(180deg, rgba(153, 98, 90, 0) 0%, rgba(153, 98, 90, 0) 8%, #99625a 8%, #99625a 100%);
-  background: -webkit-linear-gradient(180deg, rgba(153, 98, 90, 0) 0%, rgba(153, 98, 90, 0) 8%, #99625a 8%, #99625a 100%);
-  background: linear-gradient(180deg, rgba(153, 98, 90, 0) 0%, rgba(153, 98, 90, 0) 8%, #99625a 8%, #99625a 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#99625a", endColorstr="#99625a", GradientType=1);
+  background-image: url("../assets/sections/majors/BG.svg");
+  background-size: cover;
+  background-position: top;
 }
 @media screen and (max-width: 992px) {
   body #ten-majors {
@@ -617,7 +614,8 @@ body #ten-majors .rock-container {
 body #ten-majors .rock-container > img {
   position: relative;
   display: block;
-  width: 95%;
+  width: 80%;
+  margin: auto;
 }
 @media screen and (max-width: 1200px) {
   body #ten-majors .rock-container > img {
@@ -643,10 +641,10 @@ body #ten-majors .rock-container > img {
 }
 body #ten-majors .rock-container > div {
   position: absolute;
-  top: 9vw;
+  top: 18vw;
   left: 52%;
   transform: translateX(-50%);
-  width: 65vw;
+  width: 55vw;
 }
 @media screen and (max-width: 992px) {
   body #ten-majors .rock-container > div {
@@ -665,7 +663,7 @@ body #ten-majors .rock-container > div {
 }
 body #ten-majors .rock-container > div .desktop-upper {
   display: flex;
-  height: 20vw;
+  height: 25vw;
 }
 @media screen and (max-width: 992px) {
   body #ten-majors .rock-container > div .desktop-upper {
@@ -854,6 +852,9 @@ body #ten-majors .rock-container > div .desktop-lower {
     top: 118vw;
   }
 }
+body #ten-majors .rock-container > div .desktop-lower .carousel-bg {
+  opacity: 0;
+}
 @media screen and (max-width: 600px) {
   body #ten-majors .rock-container > div .desktop-lower .carousel-bg {
     position: relative;
@@ -932,7 +933,9 @@ body #ten-majors .rock-container > div .desktop-lower .controller {
   position: absolute;
   top: 0;
   height: 100%;
-  width: 100%;
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 @media screen and (max-width: 600px) {
   body #ten-majors .rock-container > div .desktop-lower .controller {
@@ -942,10 +945,10 @@ body #ten-majors .rock-container > div .desktop-lower .controller {
 }
 body #ten-majors .rock-container > div .desktop-lower .controller .control-left {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: -10%;
   transform: translate(0, -50%);
-  height: 50%;
+  height: 60%;
   aspect-ratio: 1;
 }
 @media screen and (max-width: 600px) {
@@ -957,10 +960,10 @@ body #ten-majors .rock-container > div .desktop-lower .controller .control-left 
 }
 body #ten-majors .rock-container > div .desktop-lower .controller .control-right {
   position: absolute;
-  top: 50%;
+  top: 53%;
   right: -10%;
   transform: translate(0, -50%);
-  height: 50%;
+  height: 60%;
   aspect-ratio: 1;
 }
 @media screen and (max-width: 600px) {
