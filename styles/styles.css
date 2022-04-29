@@ -751,8 +751,8 @@ body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title
 }
 @media only screen and (max-width: 768px) {
   body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title div p {
-    font-size: 40px;
-    transform: translateX(-13%) translateY(-30%);
+    font-size: 25px;
+    transform: translateX(-10%) translateY(-30%);
   }
 }
 body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description {
@@ -789,7 +789,7 @@ body #ten-majors .rock-container > div .desktop-upper .major-detail #major-descr
     height: 50%;
     margin: auto;
     height: 30vw;
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 body #ten-majors .rock-container > div .desktop-lower {
