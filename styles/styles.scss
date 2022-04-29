@@ -636,7 +636,7 @@ body {
         padding-top: 50px;
         font-size: 28px;
         text-align: center;
-        color: hsl(243, 99%, 71%);
+        color: hsl(240, 1%, 17%);
 
         @media screen and (max-width: 768px) {
           font-size: 24px;
@@ -701,7 +701,7 @@ body {
 
     .graphics {
       position: absolute;
-      left: 58%;
+      left: 50%;
       transform: translateX(-50%) translateY(-16vw);
       z-index: 1;
 
@@ -713,6 +713,10 @@ body {
           width: 84vw;
         }
       }
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
     }
   }
 

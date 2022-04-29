@@ -553,7 +553,7 @@ body #lore > div > p {
   padding-top: 50px;
   font-size: 28px;
   text-align: center;
-  color: #736cfe;
+  color: #2b2b2c;
 }
 @media screen and (max-width: 768px) {
   body #lore > div > p {
@@ -619,7 +619,7 @@ body #graphics_2 {
 }
 body #graphics_2 .graphics {
   position: absolute;
-  left: 58%;
+  left: 50%;
   transform: translateX(-50%) translateY(-16vw);
   z-index: 1;
 }
@@ -630,6 +630,11 @@ body #graphics_2 .graphics > img {
 @media screen and (max-width: 768px) {
   body #graphics_2 .graphics > img {
     width: 84vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  body #graphics_2 {
+    display: none;
   }
 }
 body #ten-majors {
