@@ -1264,6 +1264,38 @@ body {
             }
           }
 
+          &:nth-child(11) {
+            > div {
+              background-color: #121366;
+            }
+          }
+
+          &:nth-child(12) {
+            > div {
+              background-color: #e8421a;
+            }
+          }
+
+          &:nth-child(13) {
+            > div {
+              background-color: #ebd529;
+            }
+          }
+          &:nth-child(14) {
+            > div {
+              background-color: #3837b9;
+            }
+          }
+
+          &:nth-child(15) {
+            > div {
+              background-color: #ebd529;
+            }
+          }
+
+
+
+
 
           > div {
             height: 100%;

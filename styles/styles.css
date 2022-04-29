@@ -1101,6 +1101,21 @@ body #team > div .team-wrapper .team-member:nth-child(9) > div {
 body #team > div .team-wrapper .team-member:nth-child(10) > div {
   background-color: #121366;
 }
+body #team > div .team-wrapper .team-member:nth-child(11) > div {
+  background-color: #121366;
+}
+body #team > div .team-wrapper .team-member:nth-child(12) > div {
+  background-color: #e8421a;
+}
+body #team > div .team-wrapper .team-member:nth-child(13) > div {
+  background-color: #ebd529;
+}
+body #team > div .team-wrapper .team-member:nth-child(14) > div {
+  background-color: #3837b9;
+}
+body #team > div .team-wrapper .team-member:nth-child(15) > div {
+  background-color: #ebd529;
+}
 body #team > div .team-wrapper .team-member > div {
   height: 100%;
   border-radius: 35px;
