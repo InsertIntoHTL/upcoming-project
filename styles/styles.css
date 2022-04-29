@@ -650,6 +650,9 @@ body #ten-majors .rock-container {
   justify-content: center;
   align-items: flex-start;
 }
+body #ten-majors .rock-container #machine_desktop {
+  display: block;
+}
 @media screen and (max-width: 992px) {
   body #ten-majors .rock-container {
     overflow-x: hidden;
