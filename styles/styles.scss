@@ -845,13 +845,14 @@ body {
             > div {
               img {
                 position: absolute;
-                width: 15.5vw;
-                top: 50%;
-                left: 52%;
+                width: 18.5vw;
+                top: 47%;
+                left: 51%;
                 transform: translate(-50%, -50%);
 
                 @media screen and (max-width: 768px) {
-                  width: 60vw;
+                  width: 66vw;
+                  top: 52%;
                 }
 
               }
