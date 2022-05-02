@@ -340,7 +340,7 @@ body {
     }
 
     > :nth-child(7) {
-      transform: translateZ(0) scale(1) translateY(90vw);
+      transform: translateZ(0) scale(1) translateY(30vw);
       margin: auto;
       width: 35%;
       z-index: 6;
@@ -722,8 +722,8 @@ body {
 
   #ten-majors {
     position: relative;
-    padding-bottom: 2.8vw;
-    padding-top: 0;
+    padding-bottom: 4vw;
+    padding-top: 4vw;
 
     background-image: url("../assets/sections/majors/BG.svg");
     background-size: cover;
@@ -774,8 +774,7 @@ body {
         }*/
 
         @media screen and (max-width: 768px) {
-          width: 100vw;
-          height: 190vw;
+          width: 90vw;
         }
 
 
@@ -796,6 +795,8 @@ body {
 
         @media screen and (max-width: 768px) {
           width: 90vw;
+          left: 49%;
+          top: 13vw;
         }
 
 
@@ -974,7 +975,7 @@ body {
           @media screen and (max-width: 768px) {
             width: 70%;
             left: 15%;
-            top: 118vw;
+            top: 123vw;
           }
 
           .carousel-bg {
@@ -1066,7 +1067,8 @@ body {
 
             @media screen and (max-width: 768px) {
               height: 100%;
-              width: 120%;
+              width: 123%;
+              left: 51%;
             }
 
             .control-left {
