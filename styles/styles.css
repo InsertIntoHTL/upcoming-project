@@ -352,7 +352,7 @@ body .parallax > :nth-child(8) {
     display: block;
     height: 20vw;
     width: 100vw;
-    transform: translateZ(0) scale(1) translateY(213vw);
+    transform: translateZ(0) scale(1) translateY(215vw);
     background: white;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #04020f 90%, #04020f 100%);
   }
@@ -376,7 +376,7 @@ body #story-section .desktop-story .tv-wrapper img {
 body #story-section .desktop-story .tv-wrapper .video-carousel {
   position: absolute;
   top: 13.1vw;
-  left: 51%;
+  left: 50.5%;
   display: flex;
   align-items: center;
   transform: translateX(-50%) translateY(-50%);
@@ -500,6 +500,7 @@ body #lore {
   background-size: cover;
   background-position: bottom;
   padding-top: 0;
+  padding-bottom: 150px;
 }
 @media screen and (max-width: 992px) {
   body #lore {
@@ -529,8 +530,9 @@ body #lore .lab-light {
 }
 body #lore > div {
   padding-top: 150px;
-  margin: auto;
-  width: 60%;
+  margin-left: auto;
+  margin-right: 10vw;
+  width: 50%;
 }
 @media screen and (max-width: 1400px) {
   body #lore > div {
@@ -544,13 +546,11 @@ body #lore > div {
 }
 body #lore > div .title {
   position: relative;
+  transform: translateX(-10px);
 }
 body #lore > div .title img {
   position: relative;
   width: 35%;
-  margin: auto;
-  left: 50%;
-  transform: translateX(-50%);
 }
 @media screen and (max-width: 1200px) {
   body #lore > div .title img {
@@ -565,7 +565,6 @@ body #lore > div .title img {
 body #lore > div > p {
   padding-top: 50px;
   font-size: 28px;
-  text-align: center;
   color: white;
 }
 @media screen and (max-width: 768px) {
@@ -579,53 +578,55 @@ body #lore > div > p {
     font-size: 20px;
   }
 }
-body #lore > div .calltoaction {
+body #lore > div .cta-container {
+  display: flex;
   padding-top: 50px;
-  color: #9693ec;
-  width: 35%;
-  margin: auto;
-  font-size: 34px;
-  text-align: center;
+}
+body #lore > div .cta-container img {
+  position: relative;
+  width: 10%;
 }
 @media screen and (max-width: 1400px) {
-  body #lore > div .calltoaction {
+  body #lore > div .cta-container img {
+    width: 8vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body #lore > div .cta-container img {
+    width: 12vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  body #lore > div .cta-container img {
+    padding-bottom: 0px;
+  }
+}
+body #lore > div .cta-container .calltoaction {
+  width: 50%;
+  font-size: 40px;
+  padding-left: 20px;
+  color: white;
+}
+@media screen and (max-width: 1400px) {
+  body #lore > div .cta-container .calltoaction {
     width: 50%;
   }
 }
 @media screen and (max-width: 768px) {
-  body #lore > div .calltoaction {
+  body #lore > div .cta-container .calltoaction {
     padding-top: 20px;
     font-size: 28px;
     width: 65%;
   }
 }
 @media screen and (max-width: 500px) {
-  body #lore > div .calltoaction {
+  body #lore > div .cta-container .calltoaction {
     font-size: 24px;
   }
 }
-body #lore > div > img {
-  position: relative;
-  width: 5vw;
-  left: 50%;
-  transform: translateX(-50%);
-  padding-top: 30px;
-  padding-bottom: 60px;
-}
-@media screen and (max-width: 1400px) {
-  body #lore > div > img {
-    width: 8vw;
-  }
-}
-@media screen and (max-width: 1000px) {
-  body #lore > div > img {
-    width: 12vw;
-  }
-}
-@media screen and (max-width: 768px) {
-  body #lore > div > img {
-    padding-bottom: 0px;
-  }
+body #lore > div .cta-container .calltoaction :nth-child(2) {
+  color: red;
+  font-weight: 800;
 }
 body #graphics_2 {
   position: relative;
