@@ -756,17 +756,14 @@ body {
 
     .graphics {
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%) translateY(-16vw);
+      left: 62%;
+      transform: translateX(-50%) translateY(-11vw);
       z-index: 1;
 
       > img {
-        width: 84vw;
+        width: 55vw;
         z-index: 0;
 
-        @media screen and (max-width: 768px) {
-          width: 84vw;
-        }
       }
     }
 
