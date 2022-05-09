@@ -514,22 +514,37 @@ body #lore {
 }
 body #lore .lab-light {
   position: absolute;
-  top: 30px;
-  width: 26vw;
-  right: 28vw;
+  top: 0;
+  width: 34vw;
+  left: 13vw;
   height: auto;
   z-index: 3;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1921px) {
   body #lore .lab-light {
-    width: 36vw;
-    right: 18vw;
+    width: 24vw;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   body #lore .lab-light {
-    top: 0px;
-    right: 11vw;
+    display: none;
+  }
+}
+body #lore > img {
+  position: absolute;
+  bottom: 0;
+  width: 19vw;
+  left: 13vw;
+  height: auto;
+  z-index: 3;
+}
+@media screen and (min-width: 1921px) {
+  body #lore > img {
+    width: 15vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  body #lore > img {
     display: none;
   }
 }

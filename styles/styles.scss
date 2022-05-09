@@ -596,20 +596,34 @@ body {
 
     .lab-light {
       position: absolute;
-      top: 30px;
-      width: 26vw;
-      right: 28vw;
+      top: 0;
+      width: 34vw;
+      left: 13vw;
       height: auto;
       z-index: 3;
 
-      @media screen and (max-width: 1200px) {
-        width: 36vw;
-        right: 18vw;
+      @media screen and (min-width: 1921px) {
+        width: 24vw;
       }
 
-      @media screen and (max-width: 768px) {
-        top: 0px;
-        right: 11vw;
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+
+    > img {
+      position: absolute;
+      bottom: 0;
+      width: 19vw;
+      left: 13vw;
+      height: auto;
+      z-index: 3;
+
+      @media screen and (min-width: 1921px) {
+        width: 15vw;
+      }
+
+      @media screen and (max-width: 992px) {
         display: none;
       }
     }
