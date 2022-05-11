@@ -41,7 +41,7 @@ html {
 }
 
 body {
-  background-color: #7B4058;
+  background-color: #06062D;
   overflow-x: hidden;
   overflow-y: scroll;
   height: 100%;
@@ -1283,226 +1283,136 @@ body #graphics_3 .graphics img {
   display: block;
 }
 body #roadmap {
-  background-color: #814C63;
+  background-color: #06062D;
   padding-bottom: 20px;
   padding-top: 0;
   transform: translateY(-3px);
   position: relative;
   z-index: 5;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
   body #roadmap {
     padding-top: 30px;
   }
-}
-body #roadmap > div {
-  width: 80%;
-  margin: auto;
-}
-body #roadmap > div .image-wrapper {
-  display: flex;
-  justify-content: center;
-}
-body #roadmap > div .image-wrapper img {
-  width: 43vw;
-  position: relative;
-  z-index: 6;
-}
-@media screen and (max-width: 912px) {
-  body #roadmap > div .image-wrapper img {
-    width: 60vw;
-  }
-}
-@media screen and (max-width: 768px) {
-  body #roadmap > div .image-wrapper img {
-    width: 60vw;
-    transform: translateY(-15px);
-  }
-}
-body #roadmap > div .roadmap-wrapper {
-  position: relative;
-}
-body #roadmap > div .roadmap-wrapper .paper-wrapper {
-  position: relative;
-  width: 100%;
-  top: -5vw;
-}
-body #roadmap > div .roadmap-wrapper .paper-wrapper img {
-  width: 100%;
-}
-body #roadmap > div .roadmap-wrapper .paper-wrapper #paper_bottom {
-  position: relative;
-  left: 1px;
-  width: 100.6%;
-  margin-top: -8vw;
-}
-@media screen and (max-width: 768px) {
-  body #roadmap > div .roadmap-wrapper .paper-wrapper #paper_bottom {
-    width: 100.2%;
-    left: 1px;
-  }
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper {
-  position: relative;
-  top: 0;
-  left: 4px;
-  width: calc(100% - 6px);
-}
-@media screen and (max-width: 768px) {
-  body #roadmap > div .roadmap-wrapper .content-wrapper {
-    left: 2px;
-    width: calc(100% - 3px);
-  }
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div {
-  position: relative;
-  width: 100%;
-  margin: auto;
-  margin: -50px 0 0 0;
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div > img {
-  height: 150px;
-  width: auto;
-  position: relative;
-  z-index: 3;
-  left: 50%;
-  transform: translateX(-50%);
-}
-@media screen and (max-width: 992px) {
-  body #roadmap > div .roadmap-wrapper .content-wrapper > div > img {
-    height: 60px;
-  }
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div > div {
-  padding-bottom: 25px;
-  position: relative;
-}
-@media screen and (max-width: 992px) {
-  body #roadmap > div .roadmap-wrapper .content-wrapper > div > div {
-    padding-top: 20px;
-    padding-bottom: 25px;
-  }
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div > div p {
-  padding-top: 30px;
-  position: relative;
-  width: 60%;
-  margin-left: 20%;
-  font-size: 32px;
-  z-index: 1;
-  text-align: center;
-}
-@media screen and (max-width: 992px) {
-  body #roadmap > div .roadmap-wrapper .content-wrapper > div > div p {
-    font-size: 16px;
-    width: 80%;
-    margin-left: 10%;
-  }
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div > div .chapter {
-  position: relative;
-  width: 35%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-}
-@media screen and (max-width: 992px) {
-  body #roadmap > div .roadmap-wrapper .content-wrapper > div > div .chapter {
-    width: 60% !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  body #roadmap > div .roadmap-wrapper .content-wrapper > div > div .chapter {
-    width: 80% !important;
-  }
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div > div .sideimage {
-  position: absolute;
-  z-index: 3;
-}
-@media screen and (max-width: 992px) {
-  body #roadmap > div .roadmap-wrapper .content-wrapper > div > div .sideimage {
+  body #roadmap .background_desktop {
     display: none;
   }
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div > div #firstside {
-  width: 30%;
-  top: 50px;
-  right: -10vw;
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div > div #secondside {
-  width: 30%;
-  top: 50px;
-  left: -8vw;
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div > div #thirdside {
-  width: 28%;
-  top: 50px;
-  right: -8vw;
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div > div #fourthside {
-  width: 25%;
-  top: 220px;
-  left: -8vw;
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div > div #fifthside {
-  width: 25%;
-  top: 100px;
-  right: -8vw;
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div > div #sixthside {
-  width: 40%;
-  top: 80px;
-  left: -7vw;
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div #chapter0 {
-  padding-top: 60px;
-  z-index: 7 !important;
-}
-@media screen and (max-width: 992px) {
-  body #roadmap > div .roadmap-wrapper .content-wrapper > div #chapter0 img {
-    width: 70% !important;
-    margin: auto;
+  body #roadmap .background_mobile {
+    display: block;
   }
 }
-body #roadmap > div .roadmap-wrapper .content-wrapper > div #chapter1 {
-  padding-top: 20px;
-  z-index: 7 !important;
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div #chapter2 {
-  padding-top: 20px;
-  z-index: 7 !important;
-}
-@media screen and (max-width: 992px) {
-  body #roadmap > div .roadmap-wrapper .content-wrapper > div #chapter2 img {
-    width: 50% !important;
-    margin: auto;
-  }
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div #chapter3 {
-  z-index: 7 !important;
-}
-@media screen and (max-width: 992px) {
-  body #roadmap > div .roadmap-wrapper .content-wrapper > div #chapter3 img {
-    width: 65% !important;
-    margin: auto;
-  }
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div #chapter5 {
-  z-index: 7 !important;
-}
-@media screen and (max-width: 992px) {
-  body #roadmap > div .roadmap-wrapper .content-wrapper > div #chapter5 img {
-    width: 60% !important;
-    margin: auto;
-  }
-}
-body #roadmap > div .roadmap-wrapper .content-wrapper > div .bg {
+body #roadmap .content {
   position: absolute;
-  background-color: #fff;
   width: 100%;
-  height: calc(100% - 8vw + 1px);
   top: 0;
+}
+body #roadmap .content > img {
+  position: relative;
+  width: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body #roadmap .content .first_section {
+  margin-bottom: 14vw;
+}
+body #roadmap .content .first_section div {
+  width: 30%;
+}
+body #roadmap .content .first_section > img {
+  width: 40%;
+}
+body #roadmap .content .second_section {
+  flex-direction: row-reverse;
+  margin-bottom: 5vw;
+}
+body #roadmap .content .second_section div {
+  width: 30%;
+}
+body #roadmap .content .second_section > img {
+  width: 40%;
+}
+body #roadmap .content .third_section {
+  margin-bottom: 12vw;
+}
+body #roadmap .content .third_section div {
+  width: 30%;
+}
+body #roadmap .content .third_section > img {
+  width: 40%;
+}
+body #roadmap .content .fourth_section {
+  flex-direction: row-reverse;
+  margin-bottom: 8vw;
+}
+body #roadmap .content .fourth_section div {
+  width: 30%;
+}
+body #roadmap .content .fourth_section > img {
+  width: 40%;
+}
+body #roadmap .content .fifth_section {
+  margin-bottom: 8vw;
+}
+body #roadmap .content .fifth_section div {
+  width: 30%;
+}
+body #roadmap .content .fifth_section > img {
+  width: 40%;
+}
+body #roadmap .content .sixth_section {
+  flex-direction: row-reverse;
+  margin-bottom: 15vw;
+}
+body #roadmap .content .sixth_section div {
+  width: 30%;
+}
+body #roadmap .content .sixth_section > img {
+  width: 40%;
+}
+body #roadmap .content .seventh_section {
+  margin-bottom: 12vw;
+}
+body #roadmap .content .seventh_section div {
+  width: 30%;
+}
+body #roadmap .content .seventh_section > img {
+  width: 40%;
+}
+body #roadmap .content .roadmap_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #roadmap .content .roadmap_section div img {
+  width: 12%;
+  padding-bottom: 2vw;
+}
+body #roadmap .content .roadmap_section div h3 {
+  color: #E8D62A;
+  font-weight: 800;
+  font-size: 70px;
+}
+body #roadmap .content .roadmap_section div p {
+  color: white;
+  font-size: 24px;
+}
+@media screen and (max-width: 600px) {
+  body #roadmap .content .roadmap_section {
+    flex-direction: column-reverse;
+  }
+  body #roadmap .content .roadmap_section div {
+    width: 80%;
+    text-align: center;
+  }
+  body #roadmap .content .roadmap_section div h3 {
+    font-size: 30px;
+  }
+  body #roadmap .content .roadmap_section div p {
+    font-size: 22px;
+  }
+  body #roadmap .content .roadmap_section > img {
+    width: 70%;
+  }
 }
 body footer {
   width: 100%;
