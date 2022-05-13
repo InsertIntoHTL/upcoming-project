@@ -1615,6 +1615,10 @@ body {
       .fourth_section {
         flex-direction: row-reverse;
 
+        @media screen and (max-width: 600px) {
+          margin-bottom: 4vw;
+        }
+
         div {
           width: 30%;
         }

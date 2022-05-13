@@ -1383,6 +1383,11 @@ body #roadmap .content .third_section > img {
 body #roadmap .content .fourth_section {
   flex-direction: row-reverse;
 }
+@media screen and (max-width: 600px) {
+  body #roadmap .content .fourth_section {
+    margin-bottom: 4vw;
+  }
+}
 body #roadmap .content .fourth_section div {
   width: 30%;
 }
