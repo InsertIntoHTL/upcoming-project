@@ -52,6 +52,11 @@ function toggleBurger() {
 
 document.querySelector('#burger').addEventListener('click', toggleMenu, false)
 
+document.querySelectorAll(".menu-wrapper a").forEach(n => {
+    n.addEventListener('click', toggleMenu, false)
+})
+
+
 function toggleMenu() {
     if (!menu_state) {
         toggleBurger();
@@ -68,6 +73,7 @@ function toggleMenu() {
         } else {
             toggleBlur("on")
         }
+        console.log("Closed")
         menu.classList.add("hidden");
         body.classList.remove("fixed");
         body.classList.remove("no-overflow");
