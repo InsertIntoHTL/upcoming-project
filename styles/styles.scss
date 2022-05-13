@@ -1511,7 +1511,7 @@ body {
 
   #roadmap {
     background-color: #06062D;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     padding-top: 0;
     transform: translateY(-3px);
     position: relative;
@@ -1539,18 +1539,31 @@ body {
         width: 30%;
         left: 50%;
         transform: translateX(-50%);
+
+        @media screen and (max-width: 600px) {
+          width: 60%;
+        }
       }
 
 
       .first_section {
-        margin-bottom: 14vw;
+        margin-bottom: 10vw;
+
+        @media screen and (max-width: 600px) {
+          margin-bottom: 16vw;
+        }
 
         div {
           width: 30%;
         }
 
         > img {
-          width: 40%;
+          width: 45%;
+          transform: scale(1.15);
+
+          @media screen and (max-width: 600px) {
+            margin-bottom: 10vw;
+          }
         }
       }
 
@@ -1558,62 +1571,104 @@ body {
         flex-direction: row-reverse;
         margin-bottom: 5vw;
 
+        @media screen and (max-width: 600px) {
+          margin-bottom: 2vw;
+        }
+
         div {
           width: 30%;
         }
 
         > img {
-          width: 40%;
+          width: 45%;
+          transform: translate(0, -10%) scale(1.6);
+
+          @media screen and (max-width: 600px) {
+            transform: translate(15%, -10%) scale(1.6);
+            margin-bottom: 6vw;
+          }
         }
       }
 
       .third_section {
         margin-bottom: 12vw;
 
+        @media screen and (max-width: 600px) {
+          margin-bottom: 12vw;
+        }
+
         div {
           width: 30%;
         }
 
         > img {
-          width: 40%;
+          width: 45%;
+          transform: translate(15%, 0px);
+
+          @media screen and (max-width: 600px) {
+            transform: scale(1.1);
+            margin-bottom: 8vw;
+          }
         }
       }
 
       .fourth_section {
         flex-direction: row-reverse;
-        margin-bottom: 8vw;
 
         div {
           width: 30%;
         }
 
         > img {
-          width: 40%;
+          width: 45%;
+          transform: translate(-10%, 5%) scale(1.1);
+
+          @media screen and (max-width: 600px) {
+            transform: scale(1.2);
+          }
         }
       }
 
       .fifth_section {
-        margin-bottom: 8vw;
+        @media screen and (max-width: 600px) {
+          margin-bottom: 14vw;
+        }
 
         div {
           width: 30%;
         }
 
         > img {
-          width: 40%;
+          width: 45%;
+          transform: translate(10%, -15%);
+
+          @media screen and (max-width: 600px) {
+            transform: translate(10%, -5%) rotate(28deg);
+            margin-bottom: -14vw;
+          }
         }
       }
 
       .sixth_section {
         flex-direction: row-reverse;
-        margin-bottom: 15vw;
+        margin-bottom: 14vw;
+
+        @media screen and (max-width: 600px) {
+          margin-bottom: 28vw;
+        }
 
         div {
           width: 30%;
         }
 
         > img {
-          width: 40%;
+          width: 45%;
+          transform: translate(-10%, -8%) scale(1.1);
+
+          @media screen and (max-width: 600px) {
+            transform: scale(1.1);
+            margin-bottom: 10vw;
+          }
         }
       }
 
@@ -1625,7 +1680,7 @@ body {
         }
 
         > img {
-          width: 40%;
+          width: 45%;
         }
       }
 
@@ -1637,18 +1692,19 @@ body {
         div {
           img {
             width: 12%;
-            padding-bottom: 2vw;
+            padding-bottom: 1vw;
           }
 
           h3 {
             color: #E8D62A;
             font-weight: 800;
-            font-size: 70px;
+            font-size: 4.1vw;
+            padding-bottom: 15px;
           }
 
           p {
             color: white;
-            font-size: 24px;
+            font-size: 1.8vw;
           }
         }
 
@@ -1657,15 +1713,15 @@ body {
           flex-direction: column-reverse;
 
           div {
-            width: 80%;
+            width: 70%;
             text-align: center;
 
             h3 {
-              font-size: 30px;
+              font-size: 7vw;
             }
 
             p {
-              font-size: 22px;
+              font-size: 4.4vw;
             }
           }
 

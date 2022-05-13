@@ -1284,7 +1284,7 @@ body #graphics_3 .graphics img {
 }
 body #roadmap {
   background-color: #06062D;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   padding-top: 0;
   transform: translateY(-3px);
   position: relative;
@@ -1312,62 +1312,128 @@ body #roadmap .content > img {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 600px) {
+  body #roadmap .content > img {
+    width: 60%;
+  }
+}
 body #roadmap .content .first_section {
-  margin-bottom: 14vw;
+  margin-bottom: 10vw;
+}
+@media screen and (max-width: 600px) {
+  body #roadmap .content .first_section {
+    margin-bottom: 16vw;
+  }
 }
 body #roadmap .content .first_section div {
   width: 30%;
 }
 body #roadmap .content .first_section > img {
-  width: 40%;
+  width: 45%;
+  transform: scale(1.15);
+}
+@media screen and (max-width: 600px) {
+  body #roadmap .content .first_section > img {
+    margin-bottom: 10vw;
+  }
 }
 body #roadmap .content .second_section {
   flex-direction: row-reverse;
   margin-bottom: 5vw;
 }
+@media screen and (max-width: 600px) {
+  body #roadmap .content .second_section {
+    margin-bottom: 2vw;
+  }
+}
 body #roadmap .content .second_section div {
   width: 30%;
 }
 body #roadmap .content .second_section > img {
-  width: 40%;
+  width: 45%;
+  transform: translate(0, -10%) scale(1.6);
+}
+@media screen and (max-width: 600px) {
+  body #roadmap .content .second_section > img {
+    transform: translate(15%, -10%) scale(1.6);
+    margin-bottom: 6vw;
+  }
 }
 body #roadmap .content .third_section {
   margin-bottom: 12vw;
+}
+@media screen and (max-width: 600px) {
+  body #roadmap .content .third_section {
+    margin-bottom: 12vw;
+  }
 }
 body #roadmap .content .third_section div {
   width: 30%;
 }
 body #roadmap .content .third_section > img {
-  width: 40%;
+  width: 45%;
+  transform: translate(15%, 0px);
+}
+@media screen and (max-width: 600px) {
+  body #roadmap .content .third_section > img {
+    transform: scale(1.1);
+    margin-bottom: 8vw;
+  }
 }
 body #roadmap .content .fourth_section {
   flex-direction: row-reverse;
-  margin-bottom: 8vw;
 }
 body #roadmap .content .fourth_section div {
   width: 30%;
 }
 body #roadmap .content .fourth_section > img {
-  width: 40%;
+  width: 45%;
+  transform: translate(-10%, 5%) scale(1.1);
 }
-body #roadmap .content .fifth_section {
-  margin-bottom: 8vw;
+@media screen and (max-width: 600px) {
+  body #roadmap .content .fourth_section > img {
+    transform: scale(1.2);
+  }
+}
+@media screen and (max-width: 600px) {
+  body #roadmap .content .fifth_section {
+    margin-bottom: 14vw;
+  }
 }
 body #roadmap .content .fifth_section div {
   width: 30%;
 }
 body #roadmap .content .fifth_section > img {
-  width: 40%;
+  width: 45%;
+  transform: translate(10%, -15%);
+}
+@media screen and (max-width: 600px) {
+  body #roadmap .content .fifth_section > img {
+    transform: translate(10%, -5%) rotate(28deg);
+    margin-bottom: -14vw;
+  }
 }
 body #roadmap .content .sixth_section {
   flex-direction: row-reverse;
-  margin-bottom: 15vw;
+  margin-bottom: 14vw;
+}
+@media screen and (max-width: 600px) {
+  body #roadmap .content .sixth_section {
+    margin-bottom: 28vw;
+  }
 }
 body #roadmap .content .sixth_section div {
   width: 30%;
 }
 body #roadmap .content .sixth_section > img {
-  width: 40%;
+  width: 45%;
+  transform: translate(-10%, -8%) scale(1.1);
+}
+@media screen and (max-width: 600px) {
+  body #roadmap .content .sixth_section > img {
+    transform: scale(1.1);
+    margin-bottom: 10vw;
+  }
 }
 body #roadmap .content .seventh_section {
   margin-bottom: 12vw;
@@ -1376,7 +1442,7 @@ body #roadmap .content .seventh_section div {
   width: 30%;
 }
 body #roadmap .content .seventh_section > img {
-  width: 40%;
+  width: 45%;
 }
 body #roadmap .content .roadmap_section {
   display: flex;
@@ -1385,30 +1451,31 @@ body #roadmap .content .roadmap_section {
 }
 body #roadmap .content .roadmap_section div img {
   width: 12%;
-  padding-bottom: 2vw;
+  padding-bottom: 1vw;
 }
 body #roadmap .content .roadmap_section div h3 {
   color: #E8D62A;
   font-weight: 800;
-  font-size: 70px;
+  font-size: 4.1vw;
+  padding-bottom: 15px;
 }
 body #roadmap .content .roadmap_section div p {
   color: white;
-  font-size: 24px;
+  font-size: 1.8vw;
 }
 @media screen and (max-width: 600px) {
   body #roadmap .content .roadmap_section {
     flex-direction: column-reverse;
   }
   body #roadmap .content .roadmap_section div {
-    width: 80%;
+    width: 70%;
     text-align: center;
   }
   body #roadmap .content .roadmap_section div h3 {
-    font-size: 30px;
+    font-size: 7vw;
   }
   body #roadmap .content .roadmap_section div p {
-    font-size: 22px;
+    font-size: 4.4vw;
   }
   body #roadmap .content .roadmap_section > img {
     width: 70%;
