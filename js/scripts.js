@@ -85,7 +85,7 @@ function toggleMenu() {
     Audio
  */
 
-let audio = new Audio('../assets/audio/Cant_touch_this.mp3');
+let audio = new Audio('assets/audio/Cant_touch_this.mp3');
 
 
 /*
