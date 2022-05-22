@@ -874,6 +874,14 @@ body #ten-majors .rock-container > div .desktop-upper .major-detail #major-descr
   overflow-y: auto;
   display: block;
 }
+body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description a {
+  text-decoration: none;
+  color: white;
+  cursor: text;
+}
+body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description a:hover {
+  cursor: text;
+}
 body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description::-webkit-scrollbar {
   width: 10px;
 }
