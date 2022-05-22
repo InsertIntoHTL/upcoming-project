@@ -80,3 +80,21 @@ function toggleMenu() {
 
     menu_state = !menu_state;
 }
+
+/*
+    Audio
+ */
+
+let audio = new Audio('../assets/audio/Cant_touch_this.mp3');
+
+
+/*
+ Lottie-Files Animation trigger
+ */
+
+document.querySelectorAll('.sub-section').forEach(item => {
+    item.addEventListener('click', event => {
+        item.querySelectorAll('.lottiefile')[0].play();
+        audio.play();
+    }, {once: true})
+})
