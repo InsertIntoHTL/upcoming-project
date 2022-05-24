@@ -262,16 +262,16 @@ body .parallax > :nth-child(1) {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-transform: translateZ(-25px) scale(2.9) translateY(-15vw);
-  -moz-transform: translateZ(-25px) scale(2.9) translateY(-15vw);
-  transform: translateZ(-25px) scale(2.9) translateY(-15vw);
+  -webkit-transform: translateZ(-25px) scale(2.9) translateY(-22vw);
+  -moz-transform: translateZ(-25px) scale(2.9) translateY(-22vw);
+  transform: translateZ(-25px) scale(2.9) translateY(-22vw);
   z-index: 0;
 }
 @media screen and (max-width: 600px) {
   body .parallax > :nth-child(1) {
-    -webkit-transform: translateZ(-25px) scale(4) translateY(-15vw);
-    -moz-transform: translateZ(-25px) scale(4) translateY(-15vw);
-    transform: translateZ(-25px) scale(4) translateY(-15vw);
+    -webkit-transform: translateZ(-25px) scale(4) translateY(-28vw);
+    -moz-transform: translateZ(-25px) scale(4) translateY(-28vw);
+    transform: translateZ(-25px) scale(4) translateY(-28vw);
   }
 }
 body .parallax > :nth-child(2) {
@@ -287,9 +287,9 @@ body .parallax > :nth-child(3) {
   background-image: url("../assets/sections/home/parallax/desktop/4.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-transform: translateZ(-14px) scale(1.7) translateY(66vw);
-  -moz-transform: translateZ(-14px) scale(1.7) translateY(66vw);
-  transform: translateZ(-14px) scale(1.7) translateY(66vw);
+  -webkit-transform: translateZ(-14px) scale(1.7) translateY(62vw);
+  -moz-transform: translateZ(-14px) scale(1.7) translateY(62vw);
+  transform: translateZ(-14px) scale(1.7) translateY(62vw);
   z-index: 2;
 }
 @media screen and (max-width: 600px) {
