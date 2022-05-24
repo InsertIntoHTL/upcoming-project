@@ -414,8 +414,8 @@ body .parallax > :nth-child(8) {
 body .parallax > :nth-child(9) {
   height: 220vw;
   width: 100vw;
-  -webkit-transform: translateZ(-26px) scale(4) translateY(-100vw);
-  transform: translateZ(-26px) scale(4) translateY(-100vw);
+  -webkit-transform: translateZ(-26px) scale(4) translateY(-50vw);
+  transform: translateZ(-26px) scale(4) translateY(-50vw);
   background-color: green;
 }
 body #story-section {
