@@ -262,16 +262,16 @@ body .parallax > :nth-child(1) {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-transform: translateZ(-25px) scale(2.9) translateY(-22vw);
-  -moz-transform: translateZ(-25px) scale(2.9) translateY(-22vw);
-  transform: translateZ(-25px) scale(2.9) translateY(-22vw);
+  -webkit-transform: translateZ(-25px) scale(3.6) translateY(-28vw);
+  -moz-transform: translateZ(-25px) scale(3.6) translateY(-28vw);
+  transform: translateZ(-25px) scale(3.6) translateY(-28vw);
   z-index: 0;
 }
 @media screen and (max-width: 600px) {
   body .parallax > :nth-child(1) {
-    -webkit-transform: translateZ(-25px) scale(4) translateY(-28vw);
-    -moz-transform: translateZ(-25px) scale(4) translateY(-28vw);
-    transform: translateZ(-25px) scale(4) translateY(-28vw);
+    -webkit-transform: translateZ(-25px) scale(4) translateY(-46vw);
+    -moz-transform: translateZ(-25px) scale(4) translateY(-46vw);
+    transform: translateZ(-25px) scale(4) translateY(-46vw);
   }
 }
 body .parallax > :nth-child(2) {
