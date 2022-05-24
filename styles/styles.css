@@ -254,6 +254,7 @@ body .parallax .layer {
   left: 0rem;
 }
 body .parallax > :nth-child(1) {
+  display: none;
   background-image: url("../assets/sections/home/parallax/desktop/1.svg");
   background-size: contain;
   background-repeat: no-repeat;
