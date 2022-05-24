@@ -57,7 +57,7 @@ html {
 }
 
 body {
-  background-color: green;
+  background-color: #06062D;
   overflow-x: hidden;
   overflow-y: scroll;
   height: 100%;
@@ -205,7 +205,7 @@ body {
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px);
       background-color: rgb(0, 11, 76);
-      z-index: 5;
+      z-index: 10;
       transition: .3s ease;
 
       @supports (-webkit-touch-callout: none) {
@@ -268,6 +268,7 @@ body {
 
   .parallax {
     height: 125vw;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     position: relative;
 
@@ -288,10 +289,14 @@ body {
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+      -webkit-transform: translateZ(-25px) scale(2.9) translateY(0vw);
+      -moz-transform: translateZ(-25px) scale(2.9) translateY(0vw);
       transform: translateZ(-25px) scale(2.9) translateY(0vw);
       z-index: 0;
 
       @media screen and (max-width: 600px) {
+        -webkit-transform: translateZ(-25px) scale(4) translateY(0vw);
+        -moz-transform: translateZ(-25px) scale(4) translateY(0vw);
         transform: translateZ(-25px) scale(4) translateY(0vw);
       }
     }
@@ -300,6 +305,8 @@ body {
       background-image: url("../assets/sections/home/parallax/desktop/2.svg");
       background-size: contain;
       background-repeat: no-repeat;
+      -webkit-transform: translateZ(-19px) scale(1.4) translateY(18vw);
+      -moz-transform: translateZ(-19px) scale(1.4) translateY(18vw);
       transform: translateZ(-19px) scale(1.4) translateY(18vw);
       z-index: 1;
     }
@@ -308,10 +315,14 @@ body {
       background-image: url("../assets/sections/home/parallax/desktop/4.svg");
       background-size: contain;
       background-repeat: no-repeat;
+      -webkit-transform: translateZ(-14px) scale(1.7) translateY(66vw);
+      -moz-transform: translateZ(-14px) scale(1.7) translateY(66vw);
       transform: translateZ(-14px) scale(1.7) translateY(66vw);
       z-index: 2;
 
       @media screen and (max-width: 600px) {
+        -webkit-transform: translateZ(-14px) scale(1.7) translateY(130vw);
+        -moz-transform: translateZ(-14px) scale(1.7) translateY(130vw);
         transform: translateZ(-14px) scale(1.7) translateY(130vw);
       }
     }
