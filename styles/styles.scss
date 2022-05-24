@@ -297,15 +297,15 @@ body {
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      -webkit-transform: translateZ(-25px) scale(2.9) translateY(0vw);
-      -moz-transform: translateZ(-25px) scale(2.9) translateY(0vw);
-      transform: translateZ(-25px) scale(2.9) translateY(0vw);
+      -webkit-transform: translateZ(-25px) scale(2.9) translateY(-6vw);
+      -moz-transform: translateZ(-25px) scale(2.9) translateY(-6vw);
+      transform: translateZ(-25px) scale(2.9) translateY(-6vw);
       z-index: 0;
 
       @media screen and (max-width: 600px) {
-        -webkit-transform: translateZ(-25px) scale(4) translateY(0vw);
-        -moz-transform: translateZ(-25px) scale(4) translateY(0vw);
-        transform: translateZ(-25px) scale(4) translateY(0vw);
+        -webkit-transform: translateZ(-25px) scale(4) translateY(-6vw);
+        -moz-transform: translateZ(-25px) scale(4) translateY(-6vw);
+        transform: translateZ(-25px) scale(4) translateY(-6vw);
       }
     }
 
