@@ -45,6 +45,8 @@ html {
   width: 20vw;
   left: 50%;
   top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   z-index: 6;
 }
@@ -59,6 +61,8 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   height: 100%;
+  -webkit-perspective: 25px;
+  -moz-perspective: 25px;
   perspective: 25px;
 }
 body header nav {
@@ -295,11 +299,15 @@ body .parallax > :nth-child(4) {
   background-image: url("../assets/sections/home/parallax/desktop/5.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  -webkit-transform: translateZ(-11px) scale(1.2) translateY(70vw) translateX(0);
+  -moz-transform: translateZ(-11px) scale(1.2) translateY(70vw) translateX(0);
   transform: translateZ(-11px) scale(1.2) translateY(70vw) translateX(0);
   z-index: 3;
 }
 @media screen and (max-width: 600px) {
   body .parallax > :nth-child(4) {
+    -webkit-transform: translateZ(-11px) scale(1.2) translateY(150vw) translateX(0);
+    -moz-transform: translateZ(-11px) scale(1.2) translateY(150vw) translateX(0);
     transform: translateZ(-11px) scale(1.2) translateY(150vw) translateX(0);
   }
 }
@@ -307,11 +315,15 @@ body .parallax > :nth-child(5) {
   background-image: url("../assets/sections/home/parallax/desktop/6.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  -webkit-transform: translateZ(-6px) scale(1.3) translateY(79vw);
   transform: translateZ(-6px) scale(1.3) translateY(79vw);
+  -moz-transform: translateZ(-6px) scale(1.3) translateY(79vw);
   z-index: 4;
 }
 @media screen and (max-width: 600px) {
   body .parallax > :nth-child(5) {
+    -webkit-transform: translateZ(-6px) scale(1.3) translateY(155vw);
+    -moz-transform: translateZ(-6px) scale(1.3) translateY(155vw);
     transform: translateZ(-6px) scale(1.3) translateY(155vw);
   }
 }
@@ -319,15 +331,21 @@ body .parallax > :nth-child(6) {
   background-image: url("../assets/sections/home/parallax/desktop/small_trash.png");
   background-size: contain;
   background-repeat: no-repeat;
+  -webkit-transform: translateZ(-4px) scale(0.8) translateY(141vw) translateX(-5vw);
+  -moz-transform: translateZ(-4px) scale(0.8) translateY(141vw) translateX(-5vw);
   transform: translateZ(-4px) scale(0.8) translateY(141vw) translateX(-5vw);
   z-index: 5;
 }
 @media screen and (max-width: 600px) {
   body .parallax > :nth-child(6) {
+    -webkit-transform: translateZ(-4px) scale(0.7) translateY(260vw);
+    -moz-transform: translateZ(-4px) scale(0.7) translateY(260vw);
     transform: translateZ(-4px) scale(0.7) translateY(260vw);
   }
 }
 body .parallax > :nth-child(7) {
+  -webkit-transform: translateZ(0) scale(1) translateY(30vw);
+  -moz-transform: translateZ(0) scale(1) translateY(30vw);
   transform: translateZ(0) scale(1) translateY(30vw);
   margin: auto;
   width: 35%;
@@ -336,6 +354,8 @@ body .parallax > :nth-child(7) {
 @media screen and (max-width: 600px) {
   body .parallax > :nth-child(7) {
     width: 70%;
+    -webkit-transform: translateZ(0) scale(1) translateY(130vw);
+    -moz-transform: translateZ(0) scale(1) translateY(130vw);
     transform: translateZ(0) scale(1) translateY(130vw);
   }
 }
@@ -377,6 +397,8 @@ body .parallax > :nth-child(8) {
     display: block;
     height: 30vw;
     width: 100vw;
+    -webkit-transform: translateZ(0) scale(1) translateY(105vw);
+    -moz-transform: translateZ(0) scale(1) translateY(105vw);
     transform: translateZ(0) scale(1) translateY(105vw);
     background: white;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #110a2b 70%, #110a2b 100%);
@@ -384,6 +406,8 @@ body .parallax > :nth-child(8) {
 }
 @media screen and (max-width: 600px) {
   body .parallax > :nth-child(8) {
+    -webkit-transform: translateZ(0) scale(1) translateY(205vw);
+    -moz-transform: translateZ(0) scale(1) translateY(205vw);
     transform: translateZ(0) scale(1) translateY(205vw);
   }
 }
