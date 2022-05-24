@@ -122,6 +122,8 @@ body {
         }
 
         .connect-wrapper {
+          filter: saturate(0%);
+
           @media screen and (max-width: 992px) {
             display: none;
           }
@@ -136,10 +138,10 @@ body {
             font-size: 16px;
           }
 
-          a:hover {
+          /*a:hover {
             transition: 0.3s ease;
             background-color: hsl(240, 100, 77);
-          }
+          }*/
         }
 
         .burger {
@@ -246,6 +248,8 @@ body {
         left: 50%;
         transform: translate(-50%, 0);
 
+        filter: saturate(0%);
+
         a {
           color: #ffffff;
           text-decoration: none;
@@ -256,10 +260,10 @@ body {
           font-size: 16px;
         }
 
-        a:hover {
+        /*a:hover {
           transition: 0.3s ease;
           background-color: hsl(157, 81, 70);
-        }
+        }*/
       }
     }
   }
@@ -289,7 +293,6 @@ body {
     }
 
     > :nth-child(1) {
-      display: none;
       background-image: url("../assets/sections/home/parallax/desktop/1.svg");
       background-size: contain;
       background-repeat: no-repeat;
@@ -417,14 +420,18 @@ body {
           width: 100%;
         }
 
-        img {
+        a {
           width: 42%;
         }
 
-        img:hover {
-          cursor: pointer;
+        :nth-child(1) img {
+          filter: saturate(0%);
+        }
+
+        :nth-child(2) img:hover {
           filter: brightness(115%);
           transition: 0.25s ease;
+
         }
       }
     }
@@ -450,13 +457,6 @@ body {
       }
     }
 
-    > :nth-child(9) {
-      height: 220vw;
-      width: 100vw;
-      -webkit-transform: translateZ(-26px) scale(4) translateY(-50vw);
-      transform: translateZ(-26px) scale(4) translateY(-50vw);
-      background-color: green;
-    }
   }
 
 
@@ -759,10 +759,11 @@ body {
     padding-bottom: 0;
 
     .desktop-roadmap {
-      img {
+      > img {
         display: block;
         width: 100%;
       }
+
     }
 
     .mobile-roadmap {

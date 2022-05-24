@@ -109,6 +109,13 @@ body header nav > div .menu-wrapper a:hover {
     display: none;
   }
 }
+body header nav > div .connect-wrapper {
+  filter: saturate(0%);
+  /*a:hover {
+    transition: 0.3s ease;
+    background-color: hsl(240, 100, 77);
+  }*/
+}
 @media screen and (max-width: 992px) {
   body header nav > div .connect-wrapper {
     display: none;
@@ -122,10 +129,6 @@ body header nav > div .connect-wrapper a {
   padding: 12px 24px;
   font-weight: bold;
   font-size: 16px;
-}
-body header nav > div .connect-wrapper a:hover {
-  transition: 0.3s ease;
-  background-color: #8a8aff;
 }
 body header nav > div .burger {
   height: 25px;
@@ -217,6 +220,11 @@ body header .mobile .connect-wrapper {
   top: 75%;
   left: 50%;
   transform: translate(-50%, 0);
+  filter: saturate(0%);
+  /*a:hover {
+    transition: 0.3s ease;
+    background-color: hsl(157, 81, 70);
+  }*/
 }
 body header .mobile .connect-wrapper a {
   color: #ffffff;
@@ -226,10 +234,6 @@ body header .mobile .connect-wrapper a {
   padding: 12px 24px;
   font-weight: bold;
   font-size: 16px;
-}
-body header .mobile .connect-wrapper a:hover {
-  transition: 0.3s ease;
-  background-color: #75f0c1;
 }
 body section {
   padding-top: 70px;
@@ -254,7 +258,6 @@ body .parallax .layer {
   left: 0rem;
 }
 body .parallax > :nth-child(1) {
-  display: none;
   background-image: url("../assets/sections/home/parallax/desktop/1.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -382,11 +385,13 @@ body .parallax > :nth-child(7) > div {
     width: 100%;
   }
 }
-body .parallax > :nth-child(7) > div img {
+body .parallax > :nth-child(7) > div a {
   width: 42%;
 }
-body .parallax > :nth-child(7) > div img:hover {
-  cursor: pointer;
+body .parallax > :nth-child(7) > div :nth-child(1) img {
+  filter: saturate(0%);
+}
+body .parallax > :nth-child(7) > div :nth-child(2) img:hover {
   filter: brightness(115%);
   transition: 0.25s ease;
 }
@@ -411,13 +416,6 @@ body .parallax > :nth-child(8) {
     -moz-transform: translateZ(0) scale(1) translateY(205vw);
     transform: translateZ(0) scale(1) translateY(205vw);
   }
-}
-body .parallax > :nth-child(9) {
-  height: 220vw;
-  width: 100vw;
-  -webkit-transform: translateZ(-26px) scale(4) translateY(-50vw);
-  transform: translateZ(-26px) scale(4) translateY(-50vw);
-  background-color: green;
 }
 body #story-section {
   position: relative;
@@ -643,7 +641,7 @@ body #roadmap {
   padding-top: 0;
   padding-bottom: 0;
 }
-body #roadmap .desktop-roadmap img {
+body #roadmap .desktop-roadmap > img {
   display: block;
   width: 100%;
 }
