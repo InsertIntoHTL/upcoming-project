@@ -651,6 +651,11 @@ body #roadmap .mobile-roadmap img {
   display: block;
   width: 100%;
 }
+body #roadmap .mobile-roadmap .bubble {
+  top: 150px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
 @media screen and (max-width: 600px) {
   body #roadmap .desktop-roadmap {
     display: none;

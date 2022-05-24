@@ -770,6 +770,12 @@ body {
         display: block;
         width: 100%;
       }
+
+      .bubble {
+        top: 150px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
     }
 
     @media screen and (max-width: 600px) {
