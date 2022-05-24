@@ -106,37 +106,50 @@
 
 
 <section id="story-section">
-    <div class="desktop-story sub-section">
+    <div class="desktop-story">
+        <div class="tv-wrapper">
+            <img src="assets/sections/story/tv.svg">
+            <div class="video-carousel">
+                <div class="controls" id="previous">
+                    <img src="assets/sections/story/arrow_left.svg">
+                </div>
+                <div class="carousel">
+                    <iframe id="first-vid" class="iframe"
+                            src="https://www.youtube.com/embed/lKU-aj2gU6c?modestbranding=1&amp;rel=0&amp;controls=1&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+
+                    <iframe id="second-vid"
+                            src="https://www.youtube.com/embed/1kBPryvqmEw?modestbranding=1&amp;rel=0&amp;controls=1&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="" class="hidden iframe"></iframe>
+
+                </div>
+                <div class="controls" id="next">
+                    <img src="assets/sections/story/arrow_right.svg">
+                </div>
+            </div>
+        </div>
         <div class="first_transition">
-            <img src="assets/sections/story/desktop/first_transition.svg">
+            <img src="assets/sections/story/first_transition.svg">
         </div>
 
-        <div class="filler">
-            <img src="assets/sections/story/desktop/BG.svg">
-        </div>
-
-        <div class="bubble">
-            <lottie-player
-                    src="https://assets10.lottiefiles.com/packages/lf20_ub7ytqdo.json"
-                    background="transparent" speed="0.75" class="lottiefile">
-
-            </lottie-player>
-        </div>
+        <div class="filler"></div>
 
         <div class="second_transition">
-            <img src="assets/sections/story/desktop/second_transition.svg">
+            <img src="assets/sections/story/second_transition.svg">
         </div>
     </div>
-    <div class="mobile-story sub-section hidden">
-        <img src="assets/sections/story/mobile/BG.svg">
+    <div class="mobile-story hidden">
+        <img src="assets/sections/story/video_border.svg">
 
-        <div class="bubble">
-            <lottie-player
-                    src="https://assets10.lottiefiles.com/packages/lf20_ub7ytqdo.json"
-                    background="transparent" speed="0.75" class="lottiefile">
-
-            </lottie-player>
-        </div>
+        <iframe class="iframe"
+                src="https://www.youtube.com/embed/lKU-aj2gU6c?modestbranding=1&amp;rel=0&amp;controls=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""></iframe>
     </div>
 </section>
 
