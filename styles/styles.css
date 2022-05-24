@@ -401,7 +401,7 @@ body .parallax > :nth-child(8) {
     -moz-transform: translateZ(0) scale(1) translateY(105vw);
     transform: translateZ(0) scale(1) translateY(105vw);
     background: white;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #110a2b 70%, #110a2b 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #110828 70%, #110828 100%);
   }
 }
 @media screen and (max-width: 600px) {
