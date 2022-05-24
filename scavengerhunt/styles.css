@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    background-color: #0D1826;
+}
+
+img {
+    display: block;
+}
+
+.desktop_background {
+    width: 100%;
+}
+
+.mobile_background {
+    display: none;
+}
+
+.discord_button {
+    width: 12vw;
+    position: absolute;
+    left: 50%;
+    bottom: 8vw;
+    transform: translate(-50%);
+}
+
+@media screen and (max-width: 600px) {
+    .desktop_background {
+        display: none;
+    }
+
+    .mobile_background {
+        display: block;
+    }
+
+    .discord_button {
+        width: 40vw;
+        top: 150vw;
+    }
+}
