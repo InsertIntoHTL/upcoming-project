@@ -101,9 +101,9 @@ const next = document.querySelector('#next');
 
 const first_vid = document.querySelector('#first-vid');
 const second_vid = document.querySelector('#second-vid');
-//const third_vid = document.querySelector('#third-vid');
+const third_vid = document.querySelector('#third-vid');
 
-const videos = [first_vid, second_vid];
+const videos = [first_vid, second_vid, third_vid];
 
 let current_vid = 0;
 
