@@ -820,6 +820,7 @@ body {
         padding-right: 80px;
         display: flex;
         align-items: center;
+        flex-direction: column;
 
         @media screen and (max-width: 576px) {
           padding-right: 0px;
@@ -829,6 +830,12 @@ body {
           position: relative;
           width: 100%;
           min-width: 80px;
+        }
+
+        p {
+          color: white;
+          font-size: 10px;
+          padding-top: 5px;
         }
       }
 

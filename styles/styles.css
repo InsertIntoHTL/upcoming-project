@@ -688,6 +688,7 @@ body footer > div .image-container {
   padding-right: 80px;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 @media screen and (max-width: 576px) {
   body footer > div .image-container {
@@ -698,6 +699,11 @@ body footer > div .image-container img {
   position: relative;
   width: 100%;
   min-width: 80px;
+}
+body footer > div .image-container p {
+  color: white;
+  font-size: 10px;
+  padding-top: 5px;
 }
 body footer > div .link-container {
   flex-grow: 1;
