@@ -72,7 +72,7 @@ body header nav {
   width: 100%;
   height: 80px;
   transition: background-color 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: hsla(0deg, 0%, 0%, 0.1);
 }
 body header nav > div {
   width: 80%;
@@ -91,6 +91,7 @@ body header nav > div .menu-wrapper {
   width: 40%;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-grow: 1;
 }
 body header nav > div .menu-wrapper a {
@@ -99,10 +100,11 @@ body header nav > div .menu-wrapper a {
   font-size: 16px;
   font-weight: bold;
   margin: 0 1em;
+  width: 5vw;
 }
 body header nav > div .menu-wrapper a:hover {
   transition: 0.3s ease;
-  color: #8a8aff;
+  color: hsl(240deg, 100%, 77%);
 }
 @media screen and (max-width: 992px) {
   body header nav > div .menu-wrapper {
@@ -124,7 +126,7 @@ body header nav > div .connect-wrapper {
 body header nav > div .connect-wrapper a {
   color: #ffffff;
   text-decoration: none;
-  background-color: #726bff;
+  background-color: hsl(243deg, 100%, 71%);
   border-radius: 50px;
   padding: 12px 24px;
   font-weight: bold;
@@ -162,7 +164,7 @@ body header nav > div .burger #span2 {
 body header nav > div .open #span1 {
   transform: translate(0, 11px) rotate(45deg);
   transform-origin: center center;
-  background-color: #d1d1d1;
+  background-color: rgb(209, 209, 209);
 }
 body header nav > div .open #span2 {
   width: 0 !important;
@@ -185,13 +187,13 @@ body header .mobile {
   top: 0;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  background-color: #000b4c;
+  background-color: rgb(0, 11, 76);
   z-index: 10;
   transition: 0.3s ease;
 }
 @supports (-webkit-touch-callout: none) {
   body header .mobile {
-    background-color: #000b4c;
+    background-color: rgb(0, 11, 76);
   }
 }
 body header .mobile div {
@@ -229,7 +231,7 @@ body header .mobile .connect-wrapper {
 body header .mobile .connect-wrapper a {
   color: #ffffff;
   text-decoration: none;
-  background-color: #726bff;
+  background-color: hsl(243deg, 100%, 71%);
   border-radius: 50px;
   padding: 12px 24px;
   font-weight: bold;
@@ -406,8 +408,8 @@ body .parallax > :nth-child(8) {
     -webkit-transform: translateZ(0) scale(1) translateY(105vw);
     -moz-transform: translateZ(0) scale(1) translateY(105vw);
     transform: translateZ(0) scale(1) translateY(105vw);
-    background: white;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #110828 70%, #110828 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(17, 8, 40) 70%, rgb(17, 8, 40) 100%);
   }
 }
 @media screen and (max-width: 600px) {
@@ -501,8 +503,8 @@ body #story-section .desktop-story .first_transition img {
   transform: translateY(1px);
 }
 body #story-section .desktop-story .filler {
-  background: #7261d9;
-  background: linear-gradient(180deg, #7261d9 0%, #35256b 100%);
+  background: rgb(114, 97, 217);
+  background: linear-gradient(180deg, rgb(114, 97, 217) 0%, rgb(53, 37, 107) 100%);
   display: block;
   width: 100%;
   height: 27vw;
@@ -601,7 +603,7 @@ body #team {
   display: block;
   padding-top: 0;
   padding-bottom: 250px;
-  background-color: #110828;
+  background-color: rgb(17, 8, 40);
 }
 body #team .desktop-team img {
   display: block;
@@ -713,7 +715,7 @@ body footer > div .link-container div {
   margin: 0 0 0.5em 0;
 }
 body footer > div .link-container div p {
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   font-weight: 700;
   margin: 0 0 0.5em 0;
 }
@@ -724,7 +726,7 @@ body footer > div .link-container div a {
 }
 body footer > div .link-container div a:hover {
   transition: 0.3s ease;
-  color: #75f0c1;
+  color: hsl(157deg, 81%, 70%);
 }
 
 /*# sourceMappingURL=styles.css.map */
