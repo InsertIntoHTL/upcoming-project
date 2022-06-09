@@ -433,11 +433,11 @@ body #story-section .desktop-story .tv-wrapper {
   z-index: 4;
 }
 body #story-section .desktop-story .tv-wrapper img {
-  width: 76vw;
+  width: 95vw;
 }
 body #story-section .desktop-story .tv-wrapper .video-carousel {
   position: absolute;
-  top: 13.1vw;
+  top: 16.2vw;
   left: 50.5%;
   display: flex;
   align-items: center;
@@ -450,7 +450,7 @@ body #story-section .desktop-story .tv-wrapper .video-carousel {
 }
 body #story-section .desktop-story .tv-wrapper .video-carousel .carousel {
   padding: 0 40px;
-  width: 40.5vw;
+  width: 53vw;
   display: flex;
   justify-content: center;
 }
@@ -458,8 +458,8 @@ body #story-section .desktop-story .tv-wrapper .video-carousel .carousel :hover 
   cursor: pointer;
 }
 body #story-section .desktop-story .tv-wrapper .video-carousel .carousel iframe {
-  width: 40.2vw;
-  height: 22.6vw;
+  width: 50.1vw;
+  height: 28.5vw;
 }
 body #story-section .desktop-story .tv-wrapper .video-carousel .hidden {
   display: none;
@@ -507,7 +507,7 @@ body #story-section .desktop-story .filler {
   background: linear-gradient(180deg, rgb(114, 97, 217) 0%, rgb(53, 37, 107) 100%);
   display: block;
   width: 100%;
-  height: 27vw;
+  height: 40vw;
 }
 @media screen and (max-width: 1200px) {
   body #story-section .desktop-story .filler {

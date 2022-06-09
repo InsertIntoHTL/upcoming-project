@@ -482,12 +482,12 @@ body {
         z-index: 4;
 
         img {
-          width: 76vw;
+          width: 95vw;
         }
 
         .video-carousel {
           position: absolute;
-          top: 13.1vw;
+          top: 16.2vw;
           left: 50.5%;
 
           display: flex;
@@ -502,7 +502,7 @@ body {
 
           .carousel {
             padding: 0 40px;
-            width: 40.5vw;
+            width: 53vw;
             display: flex;
             justify-content: center;
 
@@ -512,8 +512,8 @@ body {
             }
 
             iframe {
-              width: 40.2vw;
-              height: 22.6vw;
+              width: 50.1vw;
+              height: 28.5vw;
             }
 
           }
@@ -583,7 +583,7 @@ body {
         background: linear-gradient(180deg, rgba(114,97,217,1) 0%, rgba(53,37,107,1) 100%);
         display: block;
         width: 100%;
-        height: 27vw;
+        height: 40vw;
 
         @media screen and (max-width: 1200px) {
           height: 36vw;
