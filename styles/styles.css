@@ -216,6 +216,9 @@ body header .mobile div .menu-wrapper a {
   font-weight: bold;
   margin: 0 1em;
 }
+body header .mobile div .menu-wrapper a img {
+  width: 100px;
+}
 body header .mobile .connect-wrapper {
   width: auto;
   position: absolute;
@@ -390,8 +393,9 @@ body .parallax > :nth-child(7) > div {
 body .parallax > :nth-child(7) > div a {
   width: 42%;
 }
-body .parallax > :nth-child(7) > div :nth-child(1) img {
-  filter: saturate(0%);
+body .parallax > :nth-child(7) > div :nth-child(1) img:hover {
+  filter: brightness(115%);
+  transition: 0.25s ease;
 }
 body .parallax > :nth-child(7) > div :nth-child(2) img:hover {
   filter: brightness(115%);

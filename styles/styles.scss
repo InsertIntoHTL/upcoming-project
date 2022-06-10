@@ -241,6 +241,10 @@ body {
             font-size: 16px;
             font-weight: bold;
             margin: 0 1em;
+
+            img{
+              width: 100px;
+            }
           }
         }
       }
@@ -428,14 +432,14 @@ body {
           width: 42%;
         }
 
-        :nth-child(1) img {
-          filter: saturate(0%);
+        :nth-child(1) img:hover {
+          filter: brightness(115%);
+          transition: 0.25s ease;
         }
 
         :nth-child(2) img:hover {
           filter: brightness(115%);
           transition: 0.25s ease;
-
         }
       }
     }
