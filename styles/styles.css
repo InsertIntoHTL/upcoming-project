@@ -111,26 +111,26 @@ body header nav > div .menu-wrapper a:hover {
     display: none;
   }
 }
-body header nav > div .connect-wrapper {
-  filter: saturate(0%);
-  /*a:hover {
-    transition: 0.3s ease;
-    background-color: hsl(240, 100, 77);
-  }*/
+body header nav > div .socials {
+  display: flex;
 }
 @media screen and (max-width: 992px) {
-  body header nav > div .connect-wrapper {
+  body header nav > div .socials {
     display: none;
   }
 }
-body header nav > div .connect-wrapper a {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: hsl(243deg, 100%, 71%);
+body header nav > div .socials a {
+  background-color: white;
   border-radius: 50px;
-  padding: 12px 24px;
-  font-weight: bold;
-  font-size: 16px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+body header nav > div .socials a img {
+  width: 25px;
 }
 body header nav > div .burger {
   height: 25px;
@@ -196,49 +196,47 @@ body header .mobile {
     background-color: rgb(0, 11, 76);
   }
 }
-body header .mobile div {
+body header .mobile .menu-wrapper {
   position: absolute;
-  width: 80%;
+  width: 60%;
   height: 70%;
-  left: 10%;
-  top: 10%;
+  left: 20%;
+  top: 15%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-body header .mobile div .menu-wrapper {
   align-items: center;
 }
-body header .mobile div .menu-wrapper a {
+body header .mobile .menu-wrapper > a {
   color: white;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
   margin: 0 1em;
 }
-body header .mobile div .menu-wrapper a img {
+body header .mobile .menu-wrapper > a img {
   width: 100px;
 }
-body header .mobile .connect-wrapper {
-  width: auto;
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  filter: saturate(0%);
-  /*a:hover {
-    transition: 0.3s ease;
-    background-color: hsl(157, 81, 70);
-  }*/
+body header .mobile .menu-wrapper .socials {
+  display: none;
 }
-body header .mobile .connect-wrapper a {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: hsl(243deg, 100%, 71%);
+@media screen and (max-width: 992px) {
+  body header .mobile .menu-wrapper .socials {
+    display: flex;
+  }
+}
+body header .mobile .menu-wrapper .socials a {
+  background-color: white;
   border-radius: 50px;
-  padding: 12px 24px;
-  font-weight: bold;
-  font-size: 16px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+body header .mobile .menu-wrapper .socials a img {
+  width: 25px;
 }
 body section {
   padding-top: 70px;
@@ -674,7 +672,7 @@ body footer {
   background-color: #3900A8;
 }
 body footer > div {
-  width: 60%;
+  width: 46%;
   margin: auto;
   display: flex;
   flex-wrap: nowrap;
