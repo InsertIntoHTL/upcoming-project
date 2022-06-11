@@ -556,73 +556,73 @@ body #story-section .mobile-story iframe {
     padding-top: 0;
   }
 }
-body #lore {
+body #hidden-section-1 {
   position: relative;
   display: block;
   padding-top: 0;
   padding-bottom: 0;
 }
-body #lore .desktop-lore img {
+body #hidden-section-1 .desktop-lore img {
   display: block;
   width: 100%;
 }
-body #lore .mobile-lore img {
+body #hidden-section-1 .mobile-lore img {
   display: block;
   width: 100%;
 }
 @media screen and (max-width: 600px) {
-  body #lore .desktop-lore {
+  body #hidden-section-1 .desktop-lore {
     display: none;
   }
-  body #lore .mobile-lore {
+  body #hidden-section-1 .mobile-lore {
     display: block;
   }
 }
-body #ten-majors {
+body #hidden-section-2 {
   position: relative;
   display: block;
   padding-top: 0;
   padding-bottom: 0;
 }
-body #ten-majors .desktop-majors img {
+body #hidden-section-2 .desktop-majors img {
   display: block;
   width: 100%;
 }
-body #ten-majors .mobile-majors img {
+body #hidden-section-2 .mobile-majors img {
   display: block;
   width: 100%;
 }
 @media screen and (max-width: 600px) {
-  body #ten-majors .desktop-majors {
+  body #hidden-section-2 .desktop-majors {
     display: none;
   }
-  body #ten-majors .mobile-majors {
+  body #hidden-section-2 .mobile-majors {
     display: block;
   }
 }
-body #team {
+body #hidden-section-3 {
   position: relative;
   display: block;
   padding-top: 0;
   padding-bottom: 250px;
   background-color: #110828;
 }
-body #team .desktop-team img {
+body #hidden-section-3 .desktop-team img {
   display: block;
   width: 100%;
 }
-body #team .mobile-team img {
+body #hidden-section-3 .mobile-team img {
   display: block;
   width: 100%;
 }
 @media screen and (max-width: 600px) {
-  body #team {
+  body #hidden-section-3 {
     padding-bottom: 0;
   }
-  body #team .desktop-team {
+  body #hidden-section-3 .desktop-team {
     display: none;
   }
-  body #team .mobile-team {
+  body #hidden-section-3 .mobile-team {
     display: block;
   }
 }
@@ -639,30 +639,30 @@ body #graphics_3 .graphics {
 body #graphics_3 .graphics img {
   display: block;
 }
-body #roadmap {
+body #hidden-section-4 {
   position: relative;
   display: block;
   padding-top: 0;
   padding-bottom: 0;
 }
-body #roadmap .desktop-roadmap > img {
+body #hidden-section-4 .desktop-roadmap > img {
   display: block;
   width: 100%;
 }
-body #roadmap .mobile-roadmap img {
+body #hidden-section-4 .mobile-roadmap img {
   display: block;
   width: 100%;
 }
-body #roadmap .mobile-roadmap .bubble {
+body #hidden-section-4 .mobile-roadmap .bubble {
   top: 150px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 @media screen and (max-width: 600px) {
-  body #roadmap .desktop-roadmap {
+  body #hidden-section-4 .desktop-roadmap {
     display: none;
   }
-  body #roadmap .mobile-roadmap {
+  body #hidden-section-4 .mobile-roadmap {
     display: block;
   }
 }
