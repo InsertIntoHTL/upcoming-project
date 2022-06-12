@@ -82,6 +82,16 @@ body header nav > div {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 1500px) {
+  body header nav > div {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 992px) {
+  body header nav > div {
+    width: 80%;
+  }
+}
 body header nav > div .image-wrapper img {
   position: relative;
   width: 100px;
@@ -120,17 +130,11 @@ body header nav > div .socials {
   }
 }
 body header nav > div .socials a {
-  background-color: white;
-  border-radius: 50px;
-  height: 40px;
-  width: 40px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 5px;
 }
 body header nav > div .socials a img {
-  width: 25px;
+  height: 40px;
 }
 body header nav > div .burger {
   height: 25px;
@@ -223,20 +227,20 @@ body header .mobile .menu-wrapper .socials {
 @media screen and (max-width: 992px) {
   body header .mobile .menu-wrapper .socials {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
-body header .mobile .menu-wrapper .socials a {
-  background-color: white;
-  border-radius: 50px;
-  height: 40px;
-  width: 40px;
+body header .mobile .menu-wrapper .socials > div {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 20px;
+}
+body header .mobile .menu-wrapper .socials a {
+  display: flex;
   margin: 0 5px;
 }
 body header .mobile .menu-wrapper .socials a img {
-  width: 25px;
+  height: 40px;
 }
 body section {
   padding-top: 70px;

@@ -89,6 +89,14 @@ body {
         justify-content: space-between;
         align-items: center;
 
+        @media screen and (max-width: 1500px) {
+          width: 90%;
+        }
+
+        @media screen and (max-width: 992px) {
+          width: 80%;
+        }
+
         .image-wrapper {
           img {
             position: relative;
@@ -134,17 +142,11 @@ body {
 
 
           a {
-            background-color: white;
-            border-radius: 50px;
-            height: 40px;
-            width: 40px;
             display: flex;
-            justify-content: center;
-            align-items: center;
             margin: 0 5px;
 
             img {
-              width: 25px;
+              height: 40px;
             }
           }
         }
@@ -253,20 +255,21 @@ body {
 
           @media screen and (max-width: 992px) {
             display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          > div {
+            display: flex;
+            margin-bottom: 20px;
           }
 
           a {
-            background-color: white;
-            border-radius: 50px;
-            height: 40px;
-            width: 40px;
             display: flex;
-            justify-content: center;
-            align-items: center;
             margin: 0 5px;
 
             img {
-              width: 25px;
+              height: 40px;
             }
           }
         }
