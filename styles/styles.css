@@ -41,7 +41,10 @@ html {
 }
 
 .disabled {
-  filter: saturate(0%);
+  filter: saturate(0%) !important;
+}
+.disabled :hover {
+  filter: brightness(100%) !important;
 }
 
 .bubble {
@@ -139,6 +142,10 @@ body header nav > div .socials a {
 }
 body header nav > div .socials a img {
   height: 40px;
+}
+body header nav > div .socials a :hover {
+  filter: brightness(108%);
+  transition: 0.25s ease;
 }
 body header nav > div .burger {
   height: 25px;
@@ -359,9 +366,9 @@ body .parallax > :nth-child(6) {
   }
 }
 body .parallax > :nth-child(7) {
-  -webkit-transform: translateZ(0) scale(1) translateY(30vw);
-  -moz-transform: translateZ(0) scale(1) translateY(30vw);
-  transform: translateZ(0) scale(1) translateY(30vw);
+  -webkit-transform: translateZ(0) scale(1) translateY(28vw);
+  -moz-transform: translateZ(0) scale(1) translateY(28vw);
+  transform: translateZ(0) scale(1) translateY(28vw);
   margin: auto;
   width: 35%;
   z-index: 6;
@@ -389,7 +396,8 @@ body .parallax > :nth-child(7) > div {
   width: 80%;
   margin: auto;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 @media screen and (max-width: 600px) {
   body .parallax > :nth-child(7) > div {
@@ -397,7 +405,13 @@ body .parallax > :nth-child(7) > div {
   }
 }
 body .parallax > :nth-child(7) > div a {
-  width: 42%;
+  width: 40%;
+  margin-bottom: 6px;
+}
+@media screen and (max-width: 600px) {
+  body .parallax > :nth-child(7) > div a {
+    width: 50%;
+  }
 }
 body .parallax > :nth-child(7) > div :nth-child(1) img:hover {
   filter: brightness(115%);

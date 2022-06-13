@@ -44,7 +44,11 @@ html {
 }
 
 .disabled {
-  filter: saturate(0%);
+  filter: saturate(0%)!important;
+
+  :hover {
+    filter: brightness(100%)!important;
+  }
 }
 
 .bubble {
@@ -151,6 +155,11 @@ body {
 
             img {
               height: 40px;
+            }
+
+            :hover {
+              filter: brightness(108%);
+              transition: 0.25s ease;
             }
           }
         }
@@ -398,9 +407,9 @@ body {
     }
 
     > :nth-child(7) {
-      -webkit-transform: translateZ(0) scale(1) translateY(30vw);
-      -moz-transform: translateZ(0) scale(1) translateY(30vw);
-      transform: translateZ(0) scale(1) translateY(30vw);
+      -webkit-transform: translateZ(0) scale(1) translateY(28vw);
+      -moz-transform: translateZ(0) scale(1) translateY(28vw);
+      transform: translateZ(0) scale(1) translateY(28vw);
       margin: auto;
       width: 35%;
       z-index: 6;
@@ -428,14 +437,20 @@ body {
         width: 80%;
         margin: auto;
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        align-items: center;
 
         @media screen and (max-width: 600px) {
           width: 100%;
         }
 
         a {
-          width: 42%;
+          width: 40%;
+          margin-bottom: 6px;
+
+          @media screen and (max-width: 600px) {
+            width: 50%;
+          }
         }
 
         :nth-child(1) img:hover {
