@@ -145,7 +145,7 @@ body header nav > div .socials a img {
   height: 40px;
 }
 body header nav > div .socials a :hover {
-  filter: brightness(108%);
+  filter: brightness(114%);
   transition: 0.25s ease;
 }
 body header nav > div .burger {
