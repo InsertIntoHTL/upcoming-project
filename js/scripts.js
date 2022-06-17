@@ -87,7 +87,7 @@ function toggleMenu() {
     Video Player
  */
 
-window.addEventListener('resize', stopOnResize, false)
+//window.addEventListener('resize', stopOnResize, false)
 
 function stopOnResize() {
     $('.iframe').each(function () {
