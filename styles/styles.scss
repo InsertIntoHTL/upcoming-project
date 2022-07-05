@@ -128,6 +128,7 @@ body {
             font-weight: bold;
             margin: 0 1em;
             width: 5vw;
+            text-align: center;
 
           }
 
@@ -393,7 +394,7 @@ body {
     }
 
     > :nth-child(6) {
-      background-image: url("../assets/sections/home/parallax/desktop/small_trash.png");
+      background-image: url("../assets/sections/home/parallax/desktop/7.svg");
       background-size: contain;
       background-repeat: no-repeat;
       -webkit-transform: translateZ(-4px) scale(0.8) translateY(141vw) translateX(-5vw);
