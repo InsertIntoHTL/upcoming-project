@@ -491,7 +491,7 @@ body {
   }
 
 
-  #story-section {
+  #story {
     position: relative;
     display: block;
     overflow-x: hidden;
@@ -668,34 +668,175 @@ body {
     }
   }
 
-  #hidden-section-1 {
+
+  #lore {
     position: relative;
     display: block;
+    background-image: url("../assets/sections/lore/background.svg");
+    background-color: #06062d;
+    background-size: cover;
+    background-position: bottom;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 150px;
 
-    .desktop-lore {
-      lottie-player {
-        display: block;
-        width: 100%;
-      }
+    @media screen and (max-width: 992px) {
+      padding-bottom: 80px;
     }
 
-    .mobile-lore {
-      img {
-        display: block;
-        width: 100%;
-      }
-    }
+    .lab-light {
+      position: absolute;
+      top: 0;
+      width: 34vw;
+      left: 13vw;
+      height: auto;
+      z-index: 3;
 
-    @media screen and (max-width: 600px) {
-      .desktop-lore {
+      @media screen and (min-width: 1921px) {
+        width: 24vw;
+      }
+
+      @media screen and (max-width: 992px) {
         display: none;
       }
+    }
 
-      .mobile-lore {
-        display: block;
+    > img {
+      position: absolute;
+      bottom: 0;
+      width: 19vw;
+      left: 13vw;
+      height: auto;
+      z-index: 3;
+
+      @media screen and (min-width: 1921px) {
+        width: 15vw;
       }
+
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+
+    > div {
+      padding-top: 150px;
+      margin-left: auto;
+      margin-right: 10vw;
+      width: 50%;
+
+      @media screen and (max-width: 992px) {
+        width: 80%;
+      }
+
+      @media screen and (max-width: 768px) {
+
+        padding-top: 0vw;
+      }
+
+
+      .title {
+        position: relative;
+        transform: translateX(-10px);
+
+        img {
+          position: relative;
+          width: 35%;
+
+          @media screen and (max-width: 1200px) {
+            width: 50%;
+          }
+
+          @media screen and (max-width: 992px) {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          @media screen and (max-width: 768px) {
+            width: 60%;
+          }
+        }
+
+      }
+
+      > p {
+        padding-top: 50px;
+        font-size: 28px;
+        color: white;
+
+
+        @media screen and (max-width: 992px) {
+          text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 24px;
+          padding-top: 20px;
+        }
+
+        @media screen and (max-width: 500px) {
+          font-size: 20px;
+        }
+      }
+
+      .cta-container {
+        display: flex;
+        padding-top: 50px;
+
+        @media screen and (max-width: 992px) {
+          justify-content: center;
+        }
+
+
+        img {
+          position: relative;
+          width: 10%;
+
+          @media screen and (max-width: 1400px) {
+            width: 8vw;
+          }
+
+          @media screen and (max-width: 992px) {
+            width: 12vw;
+          }
+
+          @media screen and (max-width: 768px) {
+            padding-bottom: 0px;
+          }
+
+        }
+
+        .calltoaction {
+          width: 50%;
+          font-size: 40px;
+          padding-left: 20px;
+          color: white;
+
+          @media screen and (max-width: 1200px) {
+            font-size: 32px;
+          }
+
+          @media screen and (max-width: 992px) {
+            font-size: 32px;
+          }
+
+          @media screen and (max-width: 768px) {
+            padding-top: 20px;
+            font-size: 28px;
+            width: 65%;
+          }
+
+          @media screen and (max-width: 500px) {
+            font-size: 24px;
+          }
+
+          :nth-child(2) {
+            color: red;
+            font-weight: 800;
+          }
+        }
+
+      }
+
+
     }
   }
 
