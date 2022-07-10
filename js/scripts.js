@@ -335,3 +335,34 @@ function changeEliBefore() {
 function changeEliAfter() {
     changeEli(majors[(absolute_position + 1) % majors.length], (absolute_position + 1))
 }
+
+
+/*
+    Team Cards
+ */
+
+$(".project").hover3d({
+    selector: ".project__card",
+    sensitivity: "17",
+    perspective: "600",
+    hoverClass: "hover-3d",
+});
+
+
+document.addEventListener('click', removeActive, false)
+
+function removeActive() {
+    document.querySelectorAll('.team-member').forEach(item => {
+        item.classList.remove('active')
+    })
+}
+
+document.querySelectorAll('.team-member').forEach(item => {
+    item.addEventListener('click', event => {
+        if(!item.classList.contains('active')) {
+            setTimeout(() => {
+                item.classList.add('active');
+            }, 5)
+        }
+    })
+})

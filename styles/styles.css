@@ -1142,30 +1142,222 @@ body #ten-majors .rock-container > div .desktop-lower .controller img:active {
     transform: scale(60%);
   }
 }
-body #hidden-section-3 {
-  position: relative;
-  display: block;
-  padding-top: 0;
+body #team {
+  background-color: #814C63;
+  background-image: url("../assets/sections/team/Our_Team_BG.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding-bottom: 250px;
-  background-color: rgb(17, 8, 40);
+  position: relative;
+  margin-top: -3vw;
+  z-index: 3;
 }
-body #hidden-section-3 .desktop-team lottie-player {
-  display: block;
-  width: 100%;
+@media screen and (max-width: 992px) {
+  body #team {
+    padding-top: 50px;
+  }
 }
-body #hidden-section-3 .mobile-team img {
-  display: block;
-  width: 100%;
+@media screen and (max-width: 768px) {
+  body #team {
+    padding-bottom: 120px;
+  }
+}
+@media screen and (min-width: 1921px) {
+  body #team {
+    padding-bottom: 510px;
+  }
+}
+@media screen and (min-width: 2561px) {
+  body #team {
+    padding-bottom: 1130px;
+  }
+}
+body #team > div .image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+body #team > div .image-wrapper img {
+  width: 360px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 992px) {
+  body #team > div .image-wrapper img {
+    width: 60vw;
+    padding-bottom: 35px;
+  }
+}
+body #team > div .team-wrapper {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1400px) {
+  body #team > div .team-wrapper {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 600px) {
-  body #hidden-section-3 {
-    padding-bottom: 0;
+  body #team > div .team-wrapper {
+    width: 100%;
   }
-  body #hidden-section-3 .desktop-team {
-    display: none;
+}
+body #team > div .team-wrapper .team-member {
+  width: 200px;
+  height: 280px;
+  margin: 19px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+body #team > div .team-wrapper .team-member:hover {
+  cursor: pointer;
+}
+body #team > div .team-wrapper .team-member:nth-child(1) > div {
+  background-color: #121366;
+}
+body #team > div .team-wrapper .team-member:nth-child(2) > div {
+  background-color: #e8421a;
+}
+body #team > div .team-wrapper .team-member:nth-child(3) > div {
+  background-color: #ebd529;
+}
+body #team > div .team-wrapper .team-member:nth-child(4) > div {
+  background-color: #121366;
+}
+body #team > div .team-wrapper .team-member:nth-child(5) > div {
+  background-color: #3837b9;
+}
+body #team > div .team-wrapper .team-member:nth-child(6) > div {
+  background-color: #ebd529;
+}
+body #team > div .team-wrapper .team-member:nth-child(7) > div {
+  background-color: #121366;
+}
+body #team > div .team-wrapper .team-member:nth-child(8) > div {
+  background-color: #3837b9;
+}
+body #team > div .team-wrapper .team-member:nth-child(9) > div {
+  background-color: #e8421a;
+}
+body #team > div .team-wrapper .team-member:nth-child(10) > div {
+  background-color: #121366;
+}
+body #team > div .team-wrapper .team-member:nth-child(11) > div {
+  background-color: #121366;
+}
+body #team > div .team-wrapper .team-member:nth-child(12) > div {
+  background-color: #e8421a;
+}
+body #team > div .team-wrapper .team-member:nth-child(13) > div {
+  background-color: #ebd529;
+}
+body #team > div .team-wrapper .team-member:nth-child(14) > div {
+  background-color: #3837b9;
+}
+body #team > div .team-wrapper .team-member:nth-child(15) > div {
+  background-color: #ebd529;
+}
+body #team > div .team-wrapper .team-member > div {
+  height: 100%;
+  border-radius: 35px;
+  overflow: hidden;
+}
+body #team > div .team-wrapper .team-member > div > img {
+  padding: 0px;
+}
+body #team > div .team-wrapper .team-member > div .team-info {
+  position: absolute;
+  width: 160px;
+  height: 75px;
+  bottom: 0;
+  border-radius: 0 0 35px 35px;
+  padding: 0 20px;
+  background-color: hsl(0deg, 0%, 95%);
+  transition: 0.15s ease-in-out;
+}
+body #team > div .team-wrapper .team-member > div .team-info h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #121365;
+  margin-bottom: 0;
+}
+body #team > div .team-wrapper .team-member > div .team-info h2 {
+  color: #7a6fcd;
+  font-size: 18px;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+body #team > div .team-wrapper .team-member > div .team-info .team-socials {
+  display: flex;
+  padding-bottom: 12px;
+}
+body #team > div .team-wrapper .team-member > div .team-info .team-socials img {
+  width: 20px;
+  padding-right: 6px;
+}
+body #team > div .team-wrapper .team-member > div .team-info .team-socials a {
+  color: hsl(239deg, 70%, 23%);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.25s ease;
+}
+body #team > div .team-wrapper .team-member > div .team-info .team-socials a:hover {
+  color: hsl(239deg, 70%, 33%);
+}
+body #team > div .team-wrapper .team-member > div .team-info hr {
+  margin-bottom: 12px;
+}
+body #team > div .team-wrapper .team-member > div .team-info p {
+  color: hsl(0deg, 0%, 10%);
+  font-size: 14px;
+}
+body #team > div .team-wrapper .active > div .team-info {
+  height: 220px;
+}
+@media screen and (max-width: 600px) {
+  body #team > div .team-wrapper .team-member {
+    width: 150px;
+    height: 210px;
+    margin: 10px;
   }
-  body #hidden-section-3 .mobile-team {
-    display: block;
+  body #team > div .team-wrapper .team-member > div .team-info {
+    width: 120px;
+    height: 58px;
+    padding: 0 15px;
+  }
+  body #team > div .team-wrapper .team-member > div .team-info h1 {
+    font-size: 18px;
+    padding-left: 5px;
+  }
+  body #team > div .team-wrapper .team-member > div .team-info h2 {
+    font-size: 12px;
+    padding-bottom: 13px;
+    padding-left: 5px;
+  }
+  body #team > div .team-wrapper .team-member > div .team-info .team-socials {
+    padding-bottom: 10px;
+  }
+  body #team > div .team-wrapper .team-member > div .team-info .team-socials img {
+    width: 15px;
+  }
+  body #team > div .team-wrapper .team-member > div .team-info .team-socials a {
+    font-size: 12px;
+  }
+  body #team > div .team-wrapper .team-member > div .team-info hr {
+    margin-bottom: 10px;
+  }
+  body #team > div .team-wrapper .team-member > div .team-info p {
+    font-size: 11px;
+  }
+  body #team > div .team-wrapper .active {
+    transform: scale(1);
+  }
+  body #team > div .team-wrapper .active > div .team-info {
+    height: 190px;
   }
 }
 body #graphics_3 {
