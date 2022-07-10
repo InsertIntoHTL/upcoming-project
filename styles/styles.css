@@ -752,26 +752,394 @@ body #lore > div .cta-container .calltoaction :nth-child(2) {
   color: red;
   font-weight: 800;
 }
-body #hidden-section-2 {
+body #graphics_2 {
   position: relative;
-  display: block;
-  padding-top: 0;
-  padding-bottom: 0;
 }
-body #hidden-section-2 .desktop-majors lottie-player {
-  display: block;
-  width: 100%;
+body #graphics_2 .graphics {
+  position: absolute;
+  left: 62%;
+  transform: translateX(-50%) translateY(-11vw);
+  z-index: 1;
 }
-body #hidden-section-2 .mobile-majors img {
-  display: block;
-  width: 100%;
+body #graphics_2 .graphics > img {
+  width: 55vw;
+  z-index: 0;
 }
-@media screen and (max-width: 600px) {
-  body #hidden-section-2 .desktop-majors {
+@media screen and (max-width: 768px) {
+  body #graphics_2 {
     display: none;
   }
-  body #hidden-section-2 .mobile-majors {
+}
+body #ten-majors {
+  position: relative;
+  padding-bottom: 4vw;
+  padding-top: 4vw;
+  background-image: url("../assets/sections/majors/BG.svg");
+  background-size: cover;
+  background-position: top;
+  /*@media screen and (max-width: 992px) {
+    background: rgb(153, 98, 90);
+    margin-top: 0;
+  }*/
+}
+body #ten-majors .rock-container {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  justify-content: center;
+  align-items: flex-start;
+}
+body #ten-majors .rock-container #machine_desktop {
+  display: block;
+}
+@media screen and (max-width: 992px) {
+  body #ten-majors .rock-container {
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container #machine_desktop {
+    display: none;
+  }
+  body #ten-majors .rock-container #machine_mobile {
     display: block;
+  }
+}
+body #ten-majors .rock-container > img {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  /*@media screen and (max-width: 992px) {
+    width: 140vw;
+    opacity: 0;
+  }*/
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > img {
+    width: 90vw;
+  }
+}
+body #ten-majors .rock-container > div {
+  position: absolute;
+  top: 18vw;
+  left: 52%;
+  transform: translateX(-50%);
+  width: 55vw;
+  /*@media screen and (max-width: 992px) {
+    left: 50%;
+  }*/
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div {
+    width: 90vw;
+    left: 49%;
+    top: 13vw;
+  }
+}
+body #ten-majors .rock-container > div .desktop-upper {
+  display: flex;
+  height: 25vw;
+  /*@media screen and (max-width: 992px) {
+    height: 30vw;
+  }*/
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-upper {
+    flex-direction: column;
+    max-height: none;
+  }
+}
+body #ten-majors .rock-container > div .desktop-upper .current-major {
+  flex: 30%;
+  position: relative;
+  height: auto;
+}
+body #ten-majors .rock-container > div .desktop-upper .current-major .hidden {
+  display: none;
+}
+body #ten-majors .rock-container > div .desktop-upper .current-major img {
+  width: 20vw;
+  position: relative;
+  padding: 2.5vw;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-upper .current-major img {
+    width: 72vw;
+    top: 5vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+body #ten-majors .rock-container > div .desktop-upper .current-major > div img {
+  position: absolute;
+  width: 18.5vw;
+  top: 47%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-upper .current-major > div img {
+    width: 66vw;
+    top: 52%;
+  }
+}
+body #ten-majors .rock-container > div .desktop-upper .major-detail {
+  flex: 70%;
+  position: relative;
+  padding: 0 50px;
+}
+body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title {
+    top: 0;
+  }
+}
+body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title img {
+  width: 18vw;
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title img {
+    position: relative;
+    width: 55vw;
+  }
+}
+body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title div {
+  position: absolute;
+  z-index: 3;
+  width: 18vw;
+  top: 50%;
+  transform: translate(0, -65%);
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title div {
+    left: 50%;
+    transform: translate(-50%, -35%);
+    width: 100%;
+  }
+}
+body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title div p {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 100;
+  padding: 0;
+  color: white;
+}
+@media screen and (max-width: 1200px) {
+  body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title div p {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title div p {
+    font-size: 50px;
+    transform: translateX(-13%) translateY(-30%);
+  }
+}
+@media only screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-upper .major-detail .major-title div p {
+    font-size: 25px;
+    transform: translateX(-10%) translateY(-30%);
+  }
+}
+body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description {
+  position: relative;
+  height: 63%;
+  width: 85%;
+  margin-top: 14px;
+  margin-left: auto;
+  padding-right: 8px;
+  color: white;
+  font-size: 22px;
+  overflow-y: auto;
+  display: block;
+}
+body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description a {
+  text-decoration: none;
+  color: white;
+  cursor: text;
+}
+body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description a:hover {
+  cursor: text;
+}
+body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description::-webkit-scrollbar {
+  width: 10px;
+}
+body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description::-webkit-scrollbar-thumb {
+  background: #8888ff;
+}
+body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description::-webkit-scrollbar-thumb:hover {
+  background: #8888ff;
+}
+@media screen and (max-width: 992px) {
+  body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-upper .major-detail #major-description {
+    height: 50%;
+    margin: auto;
+    height: 30vw;
+    font-size: 16px;
+  }
+}
+body #ten-majors .rock-container > div .desktop-lower {
+  width: 100%;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-lower {
+    width: 70%;
+    left: 15%;
+    top: 123vw;
+  }
+}
+body #ten-majors .rock-container > div .desktop-lower .carousel-bg {
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-lower .carousel-bg {
+    position: relative;
+    transform: scale(1, 2);
+  }
+}
+body #ten-majors .rock-container > div .desktop-lower .major-carousel {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-lower .major-carousel {
+    height: 180%;
+    top: -52%;
+  }
+}
+body #ten-majors .rock-container > div .desktop-lower .major-carousel .major-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: auto;
+  transition-duration: 0.3s;
+}
+@supports (aspect-ratio: 1) {
+  body #ten-majors .rock-container > div .desktop-lower .major-carousel .major-container {
+    aspect-ratio: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-lower .major-carousel .major-container {
+    width: 100%;
+  }
+}
+body #ten-majors .rock-container > div .desktop-lower .major-carousel .major-container :hover {
+  cursor: pointer;
+}
+body #ten-majors .rock-container > div .desktop-lower .major-carousel .major-container img {
+  position: relative;
+  height: 80%;
+  top: 20%;
+  margin: 0 3vw;
+  transition-duration: 0.3s;
+}
+@supports (aspect-ratio: 1) {
+  body #ten-majors .rock-container > div .desktop-lower .major-carousel .major-container img {
+    margin: 0 0vw;
+    width: 80%;
+    height: auto;
+    top: 0;
+  }
+}
+body #ten-majors .rock-container > div .desktop-lower .major-carousel .hidden {
+  filter: saturate(15%);
+}
+body #ten-majors .rock-container > div .desktop-lower .major-carousel .hidden img {
+  position: relative;
+  height: 55%;
+  top: 30%;
+}
+@supports (aspect-ratio: 1) {
+  body #ten-majors .rock-container > div .desktop-lower .major-carousel .hidden img {
+    width: 55%;
+    height: auto;
+    top: 0;
+  }
+}
+body #ten-majors .rock-container > div .desktop-lower .controller {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-lower .controller {
+    height: 100%;
+    width: 123%;
+    left: 51%;
+  }
+}
+body #ten-majors .rock-container > div .desktop-lower .controller .control-left {
+  position: absolute;
+  top: 53%;
+  left: -10%;
+  transform: translate(0, -50%);
+  height: 60%;
+  aspect-ratio: 1;
+  -webkit-tap-highlight-color: transparent;
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-lower .controller .control-left {
+    height: 130%;
+    left: -13%;
+    z-index: 7;
+  }
+}
+body #ten-majors .rock-container > div .desktop-lower .controller .control-right {
+  position: absolute;
+  top: 53%;
+  right: -10%;
+  transform: translate(0, -50%);
+  height: 60%;
+  aspect-ratio: 1;
+  -webkit-tap-highlight-color: transparent;
+}
+@media screen and (max-width: 768px) {
+  body #ten-majors .rock-container > div .desktop-lower .controller .control-right {
+    height: 130%;
+    right: -13%;
+    z-index: 7;
+  }
+}
+body #ten-majors .rock-container > div .desktop-lower .controller img {
+  height: 100%;
+  cursor: pointer;
+}
+body #ten-majors .rock-container > div .desktop-lower .controller img:hover {
+  filter: brightness(90%);
+}
+body #ten-majors .rock-container > div .desktop-lower .controller img:active {
+  animation-name: click;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+@keyframes click {
+  50% {
+    transform: scale(60%);
   }
 }
 body #hidden-section-3 {
