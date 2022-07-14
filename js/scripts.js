@@ -156,3 +156,21 @@ document.querySelectorAll('.sub-section').forEach(item => {
         audio.play();
     }, {once: true})
 })
+
+
+var observer = new IntersectionObserver(function (entries) {
+        if (entries[0].intersectionRatio === 1) {
+            entries[0]['target'].play();
+            entries[0]['target'].setLooping(true);
+        } else {
+            entries[0]['target'].setLooping(false);
+        }
+    },
+    {
+        root: null,
+        threshold: [1],
+        rootMargin: "0px 0px 0px 0px"
+    });
+
+observer.observe(document.querySelector("#lab_light"));
+observer.observe(document.querySelector("#what_is_eli"));

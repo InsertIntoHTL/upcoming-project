@@ -651,23 +651,23 @@ body #lore > div .title {
   position: relative;
   transform: translateX(-10px);
 }
-body #lore > div .title img {
+body #lore > div .title #what_is_eli {
   position: relative;
   width: 35%;
 }
 @media screen and (max-width: 1200px) {
-  body #lore > div .title img {
+  body #lore > div .title #what_is_eli {
     width: 50%;
   }
 }
 @media screen and (max-width: 992px) {
-  body #lore > div .title img {
+  body #lore > div .title #what_is_eli {
     left: 50%;
     transform: translateX(-50%);
   }
 }
 @media screen and (max-width: 768px) {
-  body #lore > div .title img {
+  body #lore > div .title #what_is_eli {
     width: 60%;
   }
 }
