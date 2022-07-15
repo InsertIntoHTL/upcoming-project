@@ -100,10 +100,10 @@ const prev = document.querySelector('#previous');
 const next = document.querySelector('#next');
 
 const first_vid = document.querySelector('#first-vid');
-//const second_vid = document.querySelector('#second-vid');
+const second_vid = document.querySelector('#second-vid');
 //const third_vid = document.querySelector('#third-vid');
 
-const videos = [first_vid];
+const videos = [first_vid, second_vid];
 
 let current_vid = 0;
 
@@ -171,6 +171,7 @@ var observer = new IntersectionObserver(function (entries) {
         threshold: [1],
         rootMargin: "0px 0px 0px 0px"
     });
+
 
 observer.observe(document.querySelector("#lab_light"));
 observer.observe(document.querySelector("#what_is_eli"));
